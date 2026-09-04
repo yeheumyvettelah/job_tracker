@@ -114,7 +114,9 @@
   .day-cell.dragover{outline:2px dashed var(--green);}
   .day-cell .num{color:var(--ink-soft);margin-bottom:4px;}
   .day-cell .evlist{display:flex;flex-direction:column;gap:2px;}
-  .day-cell .evline{font-size:0.68rem;padding:1px 4px;border-left:3px solid transparent;background:var(--bg);border-radius:3px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;color:var(--ink);cursor:grab;}
+  .day-cell .evline{font-size:0.68rem;padding:1px 4px;border-left:3px solid transparent;background:var(--bg);border-radius:3px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;color:var(--ink);cursor:grab;display:flex;align-items:center;gap:4px;}
+  .day-cell .evline span{overflow:hidden;text-overflow:ellipsis;}
+  .day-cell .evline-check{width:10px;height:10px;flex-shrink:0;cursor:pointer;}
   .day-cell .evline.done{text-decoration:line-through;color:var(--ink-soft);}
   .day-cell .more{font-size:0.68rem;color:var(--ink-soft);padding-left:4px;}
   .cal-add-btn{margin-bottom:14px;}
@@ -479,7 +481,26 @@ function renderCalendar(){
       const line = document.createElement('div');
       line.className = 'evline' + (e.done ? ' done' : '');
       line.style.borderLeftColor = CAT_COLORS[e.category];
-      line.textContent = e.title;
+      if(e.kind==='event'){
+        const cb = document.createElement('input');
+        cb.type='checkbox'; cb.className='evline-check'; cb.checked = !!e.done;
+        cb.addEventListener('mousedown', ev=>ev.stopPropagation());
+        cb.addEventListener('click', ev=>ev.stopPropagation());
+        cb.addEventListener('change', async ev=>{
+          const evObj = events.find(x=>x.id===e.id);
+          const prev = evObj.done;
+          evObj.done = ev.target.checked;
+          line.classList.toggle('done', evObj.done);
+          try{ await api('updateEventChecklist', {pageId:evObj.id, done:evObj.done, steps:evObj.steps}); }
+          catch(err){
+            evObj.done = prev; ev.target.checked = prev; line.classList.toggle('done', prev);
+            alert('저장 실패: '+err.message);
+          }
+        });
+        line.appendChild(cb);
+      }
+      const span = document.createElement('span'); span.textContent = e.title;
+      line.appendChild(span);
       if(e.id){
         line.draggable = true;
         line.addEventListener('dragstart', ev=>{ ev.stopPropagation(); ev.dataTransfer.setData('text/plain', JSON.stringify({kind:e.kind, id:e.id})); });
