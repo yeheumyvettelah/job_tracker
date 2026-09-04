@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>취업준비 컨트롤보드</title>
+<style>
+  :root{
+    --bg:#F1F2EE; --paper:#FFFFFF; --ink:#23262B; --ink-soft:#5B6069;
+    --navy:#1F3B57; --navy-soft:#3A5975;
+    --hi:#B3452C; --hi-bg:#F7E7E2;
+    --mid:#B8842E; --mid-bg:#F7EEDD;
+    --low:#8B93A1; --low-bg:#EDEEF1;
+    --unrated:#B8BCC4;
+    --green:#3F6B52; --green-bg:#E6EDE8;
+    --purple:#6B5B95;
+    --line:#E1E1DC; --radius:10px;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0;background:var(--bg);color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Malgun Gothic","Segoe UI",sans-serif;line-height:1.5;}
+  h1,h2,h3{font-family:Georgia,"Noto Serif KR",serif;font-weight:600;margin:0;}
+  header.top{background:var(--navy);color:#fff;padding:24px clamp(16px,4vw,48px) 18px;}
+  header.top .row{display:flex;justify-content:space-between;align-items:flex-end;flex-wrap:wrap;gap:14px;}
+  header.top h1{font-size:1.4rem;letter-spacing:-0.01em;}
+  header.top .sub{color:#B9C7D3;font-size:0.83rem;margin-top:4px;}
+  .sync-info{font-size:0.72rem;color:#9FB0BE;}
+  .dday-strip{display:flex;gap:10px;margin-top:14px;flex-wrap:wrap;}
+  .dday-chip{background:rgba(255,255,255,0.08);border:1px solid rgba(255,255,255,0.18);border-radius:999px;padding:6px 14px;font-size:0.8rem;white-space:nowrap;}
+  .dday-chip b{color:#FFD9CC;}
+  nav.tabs{display:flex;gap:4px;padding:0 clamp(16px,4vw,48px);background:var(--navy-soft);}
+  nav.tabs button{border:none;background:transparent;color:#E4EAEF;padding:11px 18px;font-size:0.9rem;cursor:pointer;border-bottom:3px solid transparent;font-family:inherit;}
+  nav.tabs button.active{color:#fff;border-bottom:3px solid var(--hi);font-weight:600;}
+  main{max-width:1300px;margin:0 auto;padding:24px clamp(16px,4vw,32px) 80px;}
+  section.panel{display:none;} section.panel.active{display:block;}
+  .note-banner{background:#FFF8EC;border:1px solid #EFDBAE;color:#7A5A16;font-size:0.76rem;padding:9px 14px;border-radius:8px;margin-bottom:16px;}
+  .note-banner.err{background:#FBEAE7;border-color:#E3B3A8;color:#8A3A2B;}
+
+  .kanban{display:grid;grid-template-columns:repeat(5,1fr);gap:10px;overflow-x:auto;}
+  .kcol{background:#EAEBE6;border-radius:var(--radius);padding:10px;min-height:220px;}
+  .kcol.dragover{outline:2px dashed var(--navy);}
+  .kcol h3{font-size:0.82rem;color:var(--navy);margin-bottom:8px;display:flex;justify-content:space-between;}
+  .kcol h3 .n{color:var(--ink-soft);font-weight:400;}
+  .job-card{background:var(--paper);border:1px solid var(--line);border-left:4px solid var(--low);
+    border-radius:8px;padding:10px 12px;margin-bottom:8px;cursor:grab;font-size:0.8rem;}
+  .job-card.상{border-left-color:var(--hi);} .job-card.중{border-left-color:var(--mid);}
+  .job-card.하{border-left-color:var(--low);} .job-card.미평가{border-left-color:var(--unrated);border-left-style:dashed;}
+  .job-card.dragging{opacity:0.4;}
+  .job-card .company{font-size:0.72rem;color:var(--ink-soft);margin-bottom:2px;}
+  .job-card .title{font-weight:600;margin-bottom:6px;line-height:1.3;}
+  .job-card .meta{display:flex;flex-wrap:wrap;gap:4px;font-size:0.68rem;color:var(--ink-soft);margin-bottom:6px;}
+  .job-card .meta span{background:var(--bg);border-radius:5px;padding:1px 6px;}
+  .job-card .foot{display:flex;justify-content:space-between;align-items:center;}
+  .badge-dday{font-size:0.68rem;font-weight:600;padding:2px 7px;border-radius:999px;background:var(--low-bg);color:var(--low);}
+  .badge-dday.urgent{background:var(--hi-bg);color:var(--hi);} .badge-dday.soon{background:var(--mid-bg);color:var(--mid);}
+  .job-card a{font-size:0.7rem;color:var(--navy);text-decoration:none;font-weight:600;}
+
+  .skill-toolbar{display:flex;justify-content:flex-end;margin-bottom:14px;}
+  .btn{border:1px solid var(--navy);background:var(--navy);color:#fff;padding:8px 16px;border-radius:8px;font-size:0.85rem;cursor:pointer;font-family:inherit;}
+  .btn.ghost{background:transparent;color:var(--navy);}
+  .btn.small{padding:4px 10px;font-size:0.76rem;border-radius:6px;}
+  .btn.danger{border-color:var(--hi);color:var(--hi);background:transparent;}
+
+  .skill-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:16px;}
+  .skill-card{background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);padding:20px;position:relative;}
+  .skill-card .cat{display:inline-block;font-size:0.72rem;color:var(--green);background:var(--green-bg);padding:2px 9px;border-radius:999px;margin-bottom:8px;}
+  .skill-card h3{font-size:1.05rem;margin-bottom:6px;}
+  .skill-card .goal{font-size:0.85rem;color:var(--ink-soft);margin-bottom:14px;}
+  .progress-bar{height:8px;background:var(--bg);border-radius:99px;overflow:hidden;margin-bottom:6px;}
+  .progress-bar .fill{height:100%;background:var(--green);border-radius:99px;}
+  .progress-label{display:flex;justify-content:space-between;font-size:0.76rem;color:var(--ink-soft);margin-bottom:14px;}
+  .progress-controls{display:flex;gap:6px;margin-bottom:16px;}
+  .progress-controls button{border:1px solid var(--line);background:var(--paper);width:26px;height:26px;border-radius:6px;cursor:pointer;font-size:0.9rem;}
+  .steps{list-style:none;margin:0 0 10px;padding:0;}
+  .steps li{display:flex;gap:8px;align-items:center;font-size:0.82rem;padding:6px 0;border-bottom:1px dashed var(--line);}
+  .steps li:last-child{border-bottom:none;}
+  .steps li span{flex:1;}
+  .steps li.done span{text-decoration:line-through;color:var(--ink-soft);}
+  .steps li .del-step{background:none;border:none;color:var(--ink-soft);cursor:pointer;font-size:0.9rem;padding:0 4px;}
+  .add-step-row{display:flex;gap:6px;margin-bottom:14px;}
+  .add-step-row input{flex:1;border:1px solid var(--line);border-radius:6px;padding:6px 8px;font-size:0.8rem;font-family:inherit;}
+  .skill-card textarea{width:100%;min-height:56px;border:1px solid var(--line);border-radius:8px;padding:8px 10px;font-family:inherit;font-size:0.8rem;resize:vertical;color:var(--ink);}
+  .skill-card .note-label{font-size:0.74rem;color:var(--ink-soft);margin-bottom:4px;display:block;}
+  .skill-card .target{margin-top:14px;font-size:0.78rem;color:var(--ink-soft);display:flex;justify-content:space-between;}
+  .skill-card .card-actions{position:absolute;top:16px;right:16px;display:flex;gap:6px;}
+
+  .inline-form{background:var(--paper);border:1px dashed var(--navy);border-radius:var(--radius);padding:18px;margin-bottom:16px;display:none;}
+  .inline-form.open{display:block;}
+  .inline-form .row{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:10px;}
+  .inline-form input, .inline-form select{border:1px solid var(--line);border-radius:6px;padding:7px 9px;font-size:0.85rem;font-family:inherit;}
+  .inline-form input[type=text]{flex:2;min-width:200px;}
+  .inline-form .actions{display:flex;gap:8px;justify-content:flex-end;}
+
+  .cal-head{display:flex;align-items:center;justify-content:space-between;margin-bottom:14px;flex-wrap:wrap;gap:10px;}
+  .cal-head .nav-btns button{border:1px solid var(--line);background:var(--paper);padding:6px 12px;border-radius:8px;cursor:pointer;font-size:0.85rem;}
+  .cal-legend{display:flex;gap:14px;font-size:0.76rem;color:var(--ink-soft);}
+  .cal-legend span{display:inline-flex;align-items:center;gap:5px;}
+  .legend-dot{width:8px;height:8px;border-radius:50%;display:inline-block;}
+  .grid7{display:grid;grid-template-columns:repeat(7,1fr);gap:6px;}
+  .grid7 .dow{text-align:center;font-size:0.74rem;color:var(--ink-soft);padding:4px 0;}
+  .day-cell{background:var(--paper);border:1px solid var(--line);border-radius:8px;min-height:76px;padding:6px;font-size:0.78rem;cursor:pointer;}
+  .day-cell.empty{background:transparent;border:none;cursor:default;}
+  .day-cell.today{border-color:var(--navy);border-width:2px;}
+  .day-cell.dragover{outline:2px dashed var(--green);}
+  .day-cell .num{color:var(--ink-soft);margin-bottom:4px;}
+  .day-cell .dots{display:flex;gap:3px;flex-wrap:wrap;}
+  .day-cell .dots i{width:6px;height:6px;border-radius:50%;display:inline-block;}
+  .day-cell.selected{outline:2px solid var(--navy);}
+  #cal-detail{margin-top:18px;background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);padding:14px 18px;font-size:0.85rem;min-height:40px;}
+  #cal-detail .empty-msg{color:var(--ink-soft);}
+  #cal-detail .ev{padding:7px 0;border-bottom:1px dashed var(--line);display:flex;justify-content:space-between;gap:10px;align-items:center;cursor:grab;}
+  #cal-detail .ev:last-child{border-bottom:none;}
+  #cal-detail .ev .del-ev{background:none;border:none;color:var(--ink-soft);cursor:pointer;font-size:0.85rem;}
+  .cal-add-btn{margin-bottom:14px;}
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="row">
+    <div>
+      <h1>취업준비 컨트롤보드</h1>
+      <div class="sub" id="today-str"></div>
+    </div>
+    <div class="sync-info" id="sync-info"></div>
+  </div>
+  <div class="dday-strip" id="dday-strip"></div>
+</header>
+
+<nav class="tabs">
+  <button class="active" data-tab="jobs">공고 현황</button>
+  <button data-tab="skills">스킬 개발</button>
+  <button data-tab="calendar">캘린더</button>
+</nav>
+
+<main>
+
+<section class="panel active" id="panel-jobs">
+  <div class="note-banner" id="worker-warning" style="display:none;">
+    WORKER_URL이 설정되지 않아 상태 변경(드래그)이 저장되지 않습니다. index.html 상단의 CONFIG를 채워주세요.
+  </div>
+  <div class="note-banner">카드를 드래그해서 칸을 옮기면 Notion의 "상태" 값이 즉시 바뀝니다. (여러 기기에서 동기화됨)</div>
+  <div class="kanban" id="kanban"></div>
+</section>
+
+<section class="panel" id="panel-skills">
+  <div class="skill-toolbar"><button class="btn" id="btn-new-skill">+ 새 스킬 트래커 추가</button></div>
+  <div class="inline-form" id="new-skill-form">
+    <div class="row">
+      <input type="text" id="ns-name" placeholder="예: 빅데이터분석기사 필기">
+      <select id="ns-category">
+        <option value="어학">어학</option><option value="코딩">코딩</option>
+        <option value="자격증" selected>자격증</option><option value="기타">기타</option>
+      </select>
+    </div>
+    <div class="row">
+      <input type="text" id="ns-goal" placeholder="목표" style="flex:1;min-width:240px;">
+      <input type="date" id="ns-target">
+      <input type="number" id="ns-hours" placeholder="주간 목표시간(h)" style="width:150px;">
+    </div>
+    <div class="actions">
+      <button class="btn ghost small" id="ns-cancel">취소</button>
+      <button class="btn small" id="ns-save">추가하기 (Notion에 저장)</button>
+    </div>
+  </div>
+  <div class="skill-grid" id="skill-grid"></div>
+</section>
+
+<section class="panel" id="panel-calendar">
+  <div class="cal-head">
+    <div class="nav-btns">
+      <button id="cal-prev">← 이전달</button>
+      <button id="cal-today">이번달</button>
+      <button id="cal-next">다음달 →</button>
+    </div>
+    <h2 id="cal-title" style="color:var(--navy);font-size:1.05rem;"></h2>
+    <div class="cal-legend">
+      <span><i class="legend-dot" style="background:var(--navy)"></i>공고 마감일</span>
+      <span><i class="legend-dot" style="background:var(--green)"></i>스킬 목표일</span>
+      <span><i class="legend-dot" style="background:var(--purple)"></i>개인 일정</span>
+    </div>
+  </div>
+  <button class="btn small cal-add-btn" id="btn-new-event">+ 일정 추가</button>
+  <div class="inline-form" id="new-event-form">
+    <div class="row">
+      <input type="text" id="ne-title" placeholder="일정 제목">
+      <input type="date" id="ne-date">
+    </div>
+    <div class="row"><input type="text" id="ne-note" placeholder="메모 (선택)" style="flex:1;"></div>
+    <div class="actions">
+      <button class="btn ghost small" id="ne-cancel">취소</button>
+      <button class="btn small" id="ne-save">추가하기 (Notion에 저장)</button>
+    </div>
+  </div>
+  <div class="grid7" id="cal-dow"></div>
+  <div class="grid7" id="cal-grid" style="margin-top:6px;"></div>
+  <div id="cal-detail"><div class="empty-msg">날짜를 클릭하면 그날의 일정이 여기 표시됩니다. 일정을 드래그해서 다른 날짜로 옮길 수 있어요.</div></div>
+</section>
+
+</main>
+
+<script>
+/* ===================== CONFIG — 배포 후 여기 두 값만 채우세요 ===================== */
+const WORKER_URL = "";       // 예: "https://job-dashboard-api.본인계정.workers.dev"
+const APP_SECRET = "";       // wrangler secret put APP_SECRET 에 넣은 값과 동일하게
+/* ================================================================================= */
+
+const TODAY = new Date();
+let jobs = [], skills = [], events = [];
+const STATUSES = ["신규","검토중","지원함","스킵","마감"];
+
+function dday(dateStr){
+  if(!dateStr) return null;
+  const d = new Date(dateStr+'T00:00:00');
+  return Math.round((d - new Date(TODAY.toDateString()))/86400000);
+}
+function ddayLabel(dateStr){
+  const n = dday(dateStr);
+  if(n===null) return {text:"미정", cls:""};
+  if(n < 0) return {text:"마감", cls:""};
+  if(n === 0) return {text:"D-DAY", cls:"urgent"};
+  if(n <= 7) return {text:"D-"+n, cls:"urgent"};
+  if(n <= 14) return {text:"D-"+n, cls:"soon"};
+  return {text:"D-"+n, cls:""};
+}
+function fmtDate(dateStr){
+  if(!dateStr) return "날짜 미정";
+  const d = new Date(dateStr+'T00:00:00');
+  return `${d.getFullYear()}.${d.getMonth()+1}.${d.getDate()}`;
+}
+function toISODate(d){ return `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}-${String(d.getDate()).padStart(2,'0')}`; }
+
+async function api(action, payload){
+  if(!WORKER_URL){
+    alert("WORKER_URL이 설정되지 않았습니다. index.html 상단 CONFIG를 채워주세요. (변경사항은 저장되지 않았습니다)");
+    throw new Error("WORKER_URL not set");
+  }
+  const res = await fetch(WORKER_URL, {
+    method:"POST",
+    headers:{"Content-Type":"application/json"},
+    body: JSON.stringify({ secret: APP_SECRET, action, payload })
+  });
+  const data = await res.json();
+  if(!res.ok || data.ok === false) throw new Error(data.error || "요청 실패");
+  return data.result;
+}
+
+async function loadData(){
+  const [jr, sr, er] = await Promise.all([
+    fetch('./data/jobs.json',{cache:'no-store'}).then(r=>r.json()).catch(()=>({jobs:[]})),
+    fetch('./data/skills.json',{cache:'no-store'}).then(r=>r.json()).catch(()=>({skills:[]})),
+    fetch('./data/events.json',{cache:'no-store'}).then(r=>r.json()).catch(()=>({events:[]})),
+  ]);
+  jobs = jr.jobs || [];
+  skills = (sr.skills||[]).map(s=>({...s, steps: s.steps||[], progress: s.progress||0, note: s.note||""}));
+  events = er.events || [];
+  const latest = [jr.updatedAt, sr.updatedAt, er.updatedAt].filter(Boolean).sort().pop();
+  document.getElementById('sync-info').textContent = latest ? 'Notion 마지막 동기화: '+new Date(latest).toLocaleString('ko-KR') : '';
+  if(!WORKER_URL) document.getElementById('worker-warning').style.display='block';
+}
+
+// ---------- tabs ----------
+document.querySelectorAll('nav.tabs button').forEach(btn=>{
+  btn.addEventListener('click', ()=>{
+    document.querySelectorAll('nav.tabs button').forEach(b=>b.classList.remove('active'));
+    btn.classList.add('active');
+    document.querySelectorAll('section.panel').forEach(p=>p.classList.remove('active'));
+    document.getElementById('panel-'+btn.dataset.tab).classList.add('active');
+  });
+});
+
+function renderStrip(){
+  document.getElementById('today-str').textContent = `${TODAY.getFullYear()}년 ${TODAY.getMonth()+1}월 ${TODAY.getDate()}일 기준`;
+  const active = jobs.filter(j=>j.deadline && j.status!=='마감' && j.status!=='스킵');
+  active.sort((a,b)=> dday(a.deadline)-dday(b.deadline));
+  const strip = document.getElementById('dday-strip'); strip.innerHTML='';
+  active.slice(0,4).forEach(j=>{
+    const n = dday(j.deadline);
+    const chip = document.createElement('div'); chip.className='dday-chip';
+    chip.innerHTML = `<b>D-${n<0?'마감':n}</b> · ${j.company}`;
+    strip.appendChild(chip);
+  });
+}
+
+// ---------- kanban (jobs) ----------
+function jobCard(j){
+  const dd = ddayLabel(j.deadline);
+  const p = j.priority || '미평가';
+  const div = document.createElement('div');
+  div.className = 'job-card '+p;
+  div.draggable = true;
+  div.dataset.id = j.id || '';
+  div.innerHTML = `
+    <div class="company">${j.company||''}</div>
+    <div class="title">${j.title||''}</div>
+    <div class="meta"><span>${j.location||'-'}</span><span>${j.employment||'-'}</span>${j.score!=null?`<span>적합도 ${j.score}</span>`:''}</div>
+    <div class="foot">
+      <span class="badge-dday ${dd.cls}">${dd.text}</span>
+      ${j.link?`<a href="${j.link}" target="_blank" rel="noopener">보기 ↗</a>`:''}
+    </div>`;
+  div.addEventListener('dragstart', (e)=>{
+    if(!j.id){ e.preventDefault(); alert('이 카드는 아직 실제 동기화 전이라(테스트 데이터) 드래그할 수 없어요. Actions를 한 번 실행하면 됩니다.'); return; }
+    e.dataTransfer.setData('text/plain', JSON.stringify({kind:'job', id:j.id}));
+    div.classList.add('dragging');
+  });
+  div.addEventListener('dragend', ()=>div.classList.remove('dragging'));
+  return div;
+}
+function renderKanban(){
+  const board = document.getElementById('kanban');
+  board.innerHTML='';
+  STATUSES.forEach(status=>{
+    const col = document.createElement('div');
+    col.className='kcol';
+    col.dataset.status = status;
+    const items = jobs.filter(j=>j.status===status);
+    items.sort((a,b)=>{
+      const da=a.deadline?dday(a.deadline):9999, db=b.deadline?dday(b.deadline):9999;
+      return da-db;
+    });
+    col.innerHTML = `<h3>${status} <span class="n">${items.length}</span></h3>`;
+    items.forEach(j=>col.appendChild(jobCard(j)));
+    col.addEventListener('dragover', (e)=>{ e.preventDefault(); col.classList.add('dragover'); });
+    col.addEventListener('dragleave', ()=>col.classList.remove('dragover'));
+    col.addEventListener('drop', async (e)=>{
+      e.preventDefault(); col.classList.remove('dragover');
+      let data; try{ data = JSON.parse(e.dataTransfer.getData('text/plain')); }catch{ return; }
+      if(data.kind!=='job') return;
+      const job = jobs.find(x=>x.id===data.id);
+      if(!job || job.status===status) return;
+      const prev = job.status;
+      job.status = status; renderKanban();
+      try{ await api('updateJobStatus', {pageId:data.id, status}); }
+      catch(err){ job.status = prev; renderKanban(); alert('저장 실패: '+err.message); }
+    });
+    board.appendChild(col);
+  });
+}
+
+// ---------- skills ----------
+function renderSkills(){
+  const grid = document.getElementById('skill-grid');
+  grid.innerHTML='';
+  skills.forEach(s=>{
+    const dd = s.targetDate ? ddayLabel(s.targetDate) : null;
+    const card = document.createElement('div');
+    card.className='skill-card';
+    card.innerHTML = `
+      <div class="card-actions"><button class="btn small danger" data-action="delete-skill">삭제</button></div>
+      <span class="cat">${s.category||''}</span>
+      <h3>${s.name||''}</h3>
+      <div class="goal">${s.goal||''}</div>
+      <div class="progress-bar"><div class="fill" style="width:${s.progress}%"></div></div>
+      <div class="progress-label"><span>진행률</span><span class="progress-val">${s.progress}%</span></div>
+      <div class="progress-controls"><button data-delta="-10">−</button><button data-delta="10">+</button></div>
+      <ul class="steps">
+        ${s.steps.map((step,i)=>`
+          <li class="${step.done?'done':''}" data-idx="${i}">
+            <input type="checkbox" ${step.done?'checked':''}>
+            <span>${step.text}</span>
+            <button class="del-step" title="삭제">×</button>
+          </li>`).join('')}
+      </ul>
+      <div class="add-step-row"><input type="text" placeholder="새 체크리스트 항목 추가 후 Enter"></div>
+      <span class="note-label">나만의 메모 / 학습법 조정</span>
+      <textarea placeholder="학습 방법, 이번 주 계획 등을 자유롭게 적어두세요.">${s.note||''}</textarea>
+      <div class="target">
+        <span>주간 목표 ${s.weeklyHours?s.weeklyHours+'시간':'—'}</span>
+        <span>${s.targetDate? '목표일 '+fmtDate(s.targetDate)+' ('+dd.text+')' : '목표일 미정'}</span>
+      </div>`;
+    async function pushState(){
+      try{ await api('updateSkillState', {pageId:s.id, progress:s.progress, steps:s.steps, note:s.note}); }
+      catch(err){ alert('저장 실패: '+err.message); }
+    }
+    card.querySelector('[data-action="delete-skill"]').addEventListener('click', async ()=>{
+      if(!confirm(`"${s.name}" 트래커를 Notion에서도 삭제할까요?`)) return;
+      try{ await api('deleteSkill', {pageId:s.id}); skills = skills.filter(x=>x.id!==s.id); renderSkills(); }
+      catch(err){ alert('삭제 실패: '+err.message); }
+    });
+    card.querySelectorAll('.progress-controls button').forEach(btn=>{
+      btn.addEventListener('click', async ()=>{
+        s.progress = Math.max(0, Math.min(100, s.progress + parseInt(btn.dataset.delta)));
+        card.querySelector('.fill').style.width = s.progress+'%';
+        card.querySelector('.progress-val').textContent = s.progress+'%';
+        await pushState();
+      });
+    });
+    card.querySelectorAll('.steps li').forEach(li=>{
+      const idx = parseInt(li.dataset.idx);
+      li.querySelector('input').addEventListener('change', async (e)=>{
+        s.steps[idx].done = e.target.checked;
+        li.classList.toggle('done', e.target.checked);
+        await pushState();
+      });
+      li.querySelector('.del-step').addEventListener('click', async ()=>{
+        s.steps.splice(idx,1); renderSkills(); await pushState();
+      });
+    });
+    card.querySelector('.add-step-row input').addEventListener('keydown', async (e)=>{
+      if(e.key==='Enter' && e.target.value.trim()){
+        s.steps.push({text:e.target.value.trim(), done:false});
+        renderSkills(); await pushState();
+      }
+    });
+    let saveTimer;
+    card.querySelector('textarea').addEventListener('input', (e)=>{
+      clearTimeout(saveTimer);
+      saveTimer = setTimeout(async ()=>{ s.note = e.target.value; await pushState(); }, 600);
+    });
+    grid.appendChild(card);
+  });
+}
+document.getElementById('btn-new-skill').addEventListener('click', ()=>document.getElementById('new-skill-form').classList.add('open'));
+document.getElementById('ns-cancel').addEventListener('click', ()=>document.getElementById('new-skill-form').classList.remove('open'));
+document.getElementById('ns-save').addEventListener('click', async ()=>{
+  const name = document.getElementById('ns-name').value.trim();
+  if(!name){ alert('항목명을 입력해주세요.'); return; }
+  const payload = {
+    name, category: document.getElementById('ns-category').value,
+    goal: document.getElementById('ns-goal').value.trim(),
+    targetDate: document.getElementById('ns-target').value || null,
+    weeklyHours: document.getElementById('ns-hours').value ? Number(document.getElementById('ns-hours').value) : null,
+  };
+  try{
+    const result = await api('createSkill', payload);
+    skills.push({id: result.id, ...payload, steps:[], progress:0, note:""});
+    renderSkills();
+    ['ns-name','ns-goal','ns-target','ns-hours'].forEach(id=>document.getElementById(id).value='');
+    document.getElementById('new-skill-form').classList.remove('open');
+  }catch(err){ alert('추가 실패: '+err.message); }
+});
+
+// ---------- calendar ----------
+let calYear = TODAY.getFullYear(), calMonth = TODAY.getMonth(), selectedDate = null;
+function allEvents(){
+  const evs = [];
+  jobs.forEach(j=>{ if(j.deadline && j.status!=='마감' && j.status!=='스킵') evs.push({kind:'job', id:j.id, date:j.deadline, label:j.company+' 마감', detail:j.title, color:'var(--navy)'}); });
+  skills.forEach(s=>{ if(s.targetDate) evs.push({kind:'skill', id:s.id, date:s.targetDate, label:(s.name||'').split(' — ')[0]+' 목표일', detail:s.goal||'', color:'var(--green)'}); });
+  events.forEach(ev=>{ if(ev.date) evs.push({kind:'event', id:ev.id, date:ev.date, label:ev.title, detail:ev.note||'', color:'var(--purple)'}); });
+  return evs;
+}
+function renderCalendar(){
+  const EVENTS = allEvents();
+  document.getElementById('cal-title').textContent = `${calYear}년 ${calMonth+1}월`;
+  document.getElementById('cal-dow').innerHTML = ['일','월','화','수','목','금','토'].map(d=>`<div class="dow">${d}</div>`).join('');
+  const gridEl = document.getElementById('cal-grid'); gridEl.innerHTML='';
+  const firstDay = new Date(calYear, calMonth, 1).getDay();
+  const daysInMonth = new Date(calYear, calMonth+1, 0).getDate();
+  for(let i=0;i<firstDay;i++){ const e=document.createElement('div'); e.className='day-cell empty'; gridEl.appendChild(e); }
+  for(let d=1; d<=daysInMonth; d++){
+    const dateStr = `${calYear}-${String(calMonth+1).padStart(2,'0')}-${String(d).padStart(2,'0')}`;
+    const cell = document.createElement('div'); cell.className='day-cell';
+    if(dateStr === toISODate(TODAY)) cell.classList.add('today');
+    if(dateStr === selectedDate) cell.classList.add('selected');
+    const dayEvents = EVENTS.filter(e=>e.date===dateStr);
+    cell.innerHTML = `<div class="num">${d}</div><div class="dots">${dayEvents.map(e=>`<i style="background:${e.color}"></i>`).join('')}</div>`;
+    cell.addEventListener('click', ()=>{ selectedDate = dateStr; renderCalendar(); showDetail(dateStr); });
+    cell.addEventListener('dragover', (e)=>{ e.preventDefault(); cell.classList.add('dragover'); });
+    cell.addEventListener('dragleave', ()=>cell.classList.remove('dragover'));
+    cell.addEventListener('drop', async (e)=>{
+      e.preventDefault(); cell.classList.remove('dragover');
+      let data; try{ data = JSON.parse(e.dataTransfer.getData('text/plain')); }catch{ return; }
+      await moveEventToDate(data, dateStr);
+    });
+    gridEl.appendChild(cell);
+  }
+  if(selectedDate) showDetail(selectedDate);
+}
+async function moveEventToDate(data, dateStr){
+  try{
+    if(data.kind==='job'){
+      const job = jobs.find(x=>x.id===data.id); if(!job) return;
+      const prev = job.deadline; job.deadline = dateStr; renderCalendar();
+      try{ await api('updateJobDeadline', {pageId:data.id, deadline:dateStr}); }
+      catch(err){ job.deadline = prev; renderCalendar(); alert('저장 실패: '+err.message); }
+    } else if(data.kind==='skill'){
+      const s = skills.find(x=>x.id===data.id); if(!s) return;
+      const prev = s.targetDate; s.targetDate = dateStr; renderCalendar();
+      try{ await api('updateSkillTargetDate', {pageId:data.id, targetDate:dateStr}); }
+      catch(err){ s.targetDate = prev; renderCalendar(); alert('저장 실패: '+err.message); }
+    } else if(data.kind==='event'){
+      const ev = events.find(x=>x.id===data.id); if(!ev) return;
+      const prev = ev.date; ev.date = dateStr; renderCalendar();
+      try{ await api('updateEvent', {pageId:data.id, date:dateStr}); }
+      catch(err){ ev.date = prev; renderCalendar(); alert('저장 실패: '+err.message); }
+    }
+  }catch(err){ alert('이동 실패: '+err.message); }
+}
+function showDetail(dateStr){
+  const EVENTS = allEvents().filter(e=>e.date===dateStr);
+  const detailEl = document.getElementById('cal-detail');
+  if(EVENTS.length===0){ detailEl.innerHTML = `<div class="empty-msg">${fmtDate(dateStr)} — 예정된 일정이 없습니다. (일정을 여기로 드래그해서 옮길 수도 있어요)</div>`; return; }
+  detailEl.innerHTML = EVENTS.map(e=>`
+    <div class="ev" draggable="true" data-kind="${e.kind}" data-id="${e.id||''}">
+      <span>${e.kind==='job'?'📌':e.kind==='skill'?'📗':'🗓️'} ${e.label} — ${e.detail}</span>
+      ${e.kind==='event' ? `<button class="del-ev" title="삭제">×</button>` : ''}
+    </div>`).join('');
+  detailEl.querySelectorAll('.ev').forEach(row=>{
+    row.addEventListener('dragstart', (e)=>{
+      if(!row.dataset.id){ e.preventDefault(); return; }
+      e.dataTransfer.setData('text/plain', JSON.stringify({kind:row.dataset.kind, id:row.dataset.id}));
+    });
+  });
+  detailEl.querySelectorAll('.del-ev').forEach(btn=>{
+    btn.addEventListener('click', async (e)=>{
+      const row = e.target.closest('.ev'); const id = row.dataset.id;
+      if(!confirm('이 일정을 삭제할까요?')) return;
+      try{ await api('deleteEvent', {pageId:id}); events = events.filter(x=>x.id!==id); renderCalendar(); }
+      catch(err){ alert('삭제 실패: '+err.message); }
+    });
+  });
+}
+document.getElementById('cal-prev').addEventListener('click', ()=>{ calMonth--; if(calMonth<0){calMonth=11;calYear--;} renderCalendar(); });
+document.getElementById('cal-next').addEventListener('click', ()=>{ calMonth++; if(calMonth>11){calMonth=0;calYear++;} renderCalendar(); });
+document.getElementById('cal-today').addEventListener('click', ()=>{ calYear=TODAY.getFullYear(); calMonth=TODAY.getMonth(); renderCalendar(); });
+
+document.getElementById('btn-new-event').addEventListener('click', ()=>{
+  document.getElementById('new-event-form').classList.add('open');
+  if(selectedDate) document.getElementById('ne-date').value = selectedDate;
+});
+document.getElementById('ne-cancel').addEventListener('click', ()=>document.getElementById('new-event-form').classList.remove('open'));
+document.getElementById('ne-save').addEventListener('click', async ()=>{
+  const title = document.getElementById('ne-title').value.trim();
+  const date = document.getElementById('ne-date').value;
+  const note = document.getElementById('ne-note').value.trim();
+  if(!title || !date){ alert('제목과 날짜를 입력해주세요.'); return; }
+  try{
+    const result = await api('createEvent', {title, date, note});
+    events.push({id: result.id, title, date, note});
+    renderCalendar();
+    ['ne-title','ne-date','ne-note'].forEach(id=>document.getElementById(id).value='');
+    document.getElementById('new-event-form').classList.remove('open');
+  }catch(err){ alert('추가 실패: '+err.message); }
+});
+
+// ---------- init ----------
+(async function init(){
+  await loadData();
+  renderStrip();
+  renderKanban();
+  renderSkills();
+  renderCalendar();
+})();
+</script>
+</body>
+</html>
