@@ -274,7 +274,7 @@ document.querySelectorAll('nav.tabs button').forEach(btn=>{
 
 function renderStrip(){
   document.getElementById('today-str').textContent = `${TODAY.getFullYear()}년 ${TODAY.getMonth()+1}월 ${TODAY.getDate()}일 기준`;
-  const active = jobs.filter(j=>j.deadline && j.status!=='마감' && j.status!=='스킵');
+  const active = jobs.filter(j=>j.deadline && j.status==='검토중');
   active.sort((a,b)=>dday(a.deadline)-dday(b.deadline));
   const strip = document.getElementById('dday-strip'); strip.innerHTML='';
   active.slice(0,4).forEach(j=>{
