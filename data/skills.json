@@ -1,18 +1,37 @@
 {
-  "updatedAt": "2026-09-04T03:58:03.630Z",
+  "updatedAt": "2026-09-04T10:59:02.719Z",
   "skills": [
     {
-      "id": "3d139273-b462-8135-a37c-daf11033782a",
-      "name": "자격증 — 컴퓨터활용능력 1급 실기",
+      "id": "3d139273-b462-8190-b36c-ea45820e394f",
+      "name": "빅데이터분석기사 필기",
       "category": "자격증",
-      "goal": "2026년 12월 시험 예정 (기존 메모 기록 기준)",
-      "method": "실기 기출문제 반복 풀이 중심, 엑셀/액세스 실기 동영상 강의 병행",
+      "goal": "",
+      "method": "",
       "status": "계획중",
       "startDate": null,
-      "targetDate": "2026-12-01",
+      "targetDate": "2026-09-05",
       "weeklyHours": null,
       "progress": 0,
       "steps": [],
+      "note": ""
+    },
+    {
+      "id": "3d139273-b462-8135-a37c-daf11033782a",
+      "name": "컴퓨터활용능력 1급 실기",
+      "category": "자격증",
+      "goal": "",
+      "method": "실기 기출문제 반복 풀이 중심, 엑셀/액세스 실기 동영상 강의 병행",
+      "status": "계획중",
+      "startDate": null,
+      "targetDate": "2026-09-28",
+      "weeklyHours": null,
+      "progress": 0,
+      "steps": [
+        {
+          "text": "공부 방법 정리",
+          "done": false
+        }
+      ],
       "note": ""
     },
     {

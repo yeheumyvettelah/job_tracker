@@ -1,4 +1,41 @@
 {
-  "updatedAt": "2026-09-04T03:58:03.951Z",
-  "events": []
+  "updatedAt": "2026-09-04T10:59:03.003Z",
+  "events": [
+    {
+      "id": "3d139273-b462-81d2-a313-e4f49893df4c",
+      "title": "test",
+      "date": "2026-09-04",
+      "note": "",
+      "category": "스킬관련",
+      "steps": [],
+      "done": false
+    },
+    {
+      "id": "3d139273-b462-8180-afe7-dafd188da42c",
+      "title": "ㅅtest",
+      "date": "2026-09-04",
+      "note": "",
+      "category": "개인일정",
+      "steps": [],
+      "done": true
+    },
+    {
+      "id": "3d139273-b462-813b-923a-c20d9d4634f1",
+      "title": "빅분기 필기 모의고사 4회",
+      "date": "2026-09-04",
+      "note": "",
+      "category": "공고관련",
+      "steps": [],
+      "done": false
+    },
+    {
+      "id": "3d139273-b462-8155-91e8-ffae4a1a2d1f",
+      "title": "빅데이터분석기사 필기 모의고사 4회",
+      "date": "2026-09-04",
+      "note": "",
+      "category": "스킬관련",
+      "steps": [],
+      "done": false
+    }
+  ]
 }
