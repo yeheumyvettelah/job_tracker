@@ -108,13 +108,14 @@
   .color-pick{width:20px;height:20px;border:none;padding:0;border-radius:4px;vertical-align:middle;cursor:pointer;}
   .grid7{display:grid;grid-template-columns:repeat(7,1fr);gap:6px;}
   .grid7 .dow{text-align:center;font-size:0.74rem;color:var(--ink-soft);padding:4px 0;}
-  .day-cell{background:var(--paper);border:1px solid var(--line);border-radius:8px;min-height:104px;padding:6px;font-size:0.78rem;cursor:pointer;min-width:0;overflow:hidden;}
+  .day-cell{background:var(--paper);border:1px solid var(--line);border-radius:8px;min-height:104px;padding:6px;font-size:0.78rem;cursor:pointer;}
   .day-cell.empty{background:transparent;border:none;cursor:default;}
   .day-cell.today{border-color:var(--navy);border-width:2px;}
   .day-cell.dragover{outline:2px dashed var(--green);}
   .day-cell .num{color:var(--ink-soft);margin-bottom:4px;}
   .day-cell .evlist{display:flex;flex-direction:column;gap:2px;}
-  .day-cell .evline{font-size:0.68rem;padding:1px 4px;border-left:3px solid transparent;background:var(--bg);border-radius:3px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;color:var(--ink);}
+  .day-cell .evline{font-size:0.68rem;padding:1px 4px;border-left:3px solid transparent;background:var(--bg);border-radius:3px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;color:var(--ink);cursor:grab;}
+  .day-cell .evline.done{text-decoration:line-through;color:var(--ink-soft);}
   .day-cell .more{font-size:0.68rem;color:var(--ink-soft);padding-left:4px;}
   .cal-add-btn{margin-bottom:14px;}
 
@@ -131,7 +132,8 @@
   #day-popover .ph button{border:none;background:none;font-size:1.1rem;cursor:pointer;color:var(--ink-soft);}
   .pev{border:1px solid var(--line);border-radius:8px;padding:10px 12px;margin-bottom:10px;cursor:grab;}
   .pev .tag{display:inline-flex;align-items:center;gap:5px;font-size:0.7rem;color:var(--ink-soft);margin-bottom:4px;}
-  .pev .ptitle{font-weight:600;font-size:0.85rem;margin-bottom:2px;}
+  .pev .ptitle{font-weight:600;font-size:0.85rem;margin-bottom:2px;display:flex;align-items:center;gap:6px;}
+  .pev .ptitle.done{text-decoration:line-through;color:var(--ink-soft);}
   .pev .pdetail{font-size:0.76rem;color:var(--ink-soft);margin-bottom:6px;}
   .pev .prow-actions{display:flex;gap:6px;margin-top:6px;}
   .pev .psteps{list-style:none;margin:6px 0;padding:0;}
@@ -218,7 +220,7 @@
 <script>
 /* ===================== CONFIG — 배포 후 여기 두 값만 채우세요 ===================== */
 const WORKER_URL = "https://job-dashboard-api.yvette-job-tracker.workers.dev";      
-const APP_SECRET = "nicevictory2028";     
+const APP_SECRET = "nicevictory2028";    
 /* ================================================================================= */
 
 const TODAY = new Date();
@@ -257,7 +259,7 @@ async function loadData(){
   ]);
   jobs = jr.jobs || [];
   skills = (sr.skills||[]).map(s=>({...s, steps:s.steps||[], progress:s.progress||0, note:s.note||""}));
-  events = (er.events||[]).map(e=>({...e, category:e.category||'개인일정', steps:e.steps||[]}));
+  events = (er.events||[]).map(e=>({...e, category:e.category||'개인일정', steps:e.steps||[], done:!!e.done}));
   const latest = [jr.updatedAt, sr.updatedAt, er.updatedAt].filter(Boolean).sort().pop();
   document.getElementById('sync-info').textContent = latest ? 'Notion 마지막 동기화: '+new Date(latest).toLocaleString('ko-KR') : '';
   if(!WORKER_URL) document.getElementById('worker-warning').style.display='block';
@@ -452,7 +454,7 @@ function allEvents(){
   const evs=[];
   jobs.forEach(j=>{ if(j.deadline && (j.status==='신규' || j.status==='검토중')) evs.push({kind:'job',id:j.id,date:j.deadline,category:'공고관련',title:j.company+' 마감',detail:j.title,steps:null}); });
   skills.forEach(s=>{ if(s.targetDate) evs.push({kind:'skill',id:s.id,date:s.targetDate,category:'스킬관련',title:(s.name||'').split(' — ')[0]+' 목표일',detail:s.goal||'',steps:null}); });
-  events.forEach(ev=>{ if(ev.date) evs.push({kind:'event',id:ev.id,date:ev.date,category:ev.category||'개인일정',title:ev.title,detail:ev.note||'',steps:ev.steps||[]}); });
+  events.forEach(ev=>{ if(ev.date) evs.push({kind:'event',id:ev.id,date:ev.date,category:ev.category||'개인일정',title:ev.title,detail:ev.note||'',steps:ev.steps||[],done:!!ev.done}); });
   return evs;
 }
 
@@ -469,9 +471,25 @@ function renderCalendar(){
     const cell=document.createElement('div'); cell.className='day-cell';
     if(dateStr===toISODate(TODAY)) cell.classList.add('today');
     const dayEvents=EVENTS.filter(e=>e.date===dateStr);
+    const numDiv = document.createElement('div'); numDiv.className='num'; numDiv.textContent = d;
+    const listDiv = document.createElement('div'); listDiv.className='evlist';
     const shown = dayEvents.slice(0,3);
     const extra = dayEvents.length - shown.length;
-    cell.innerHTML=`<div class="num">${d}</div><div class="evlist">${shown.map(e=>`<div class="evline" style="border-left-color:${CAT_COLORS[e.category]}">${e.title}</div>`).join('')}${extra>0?`<div class="more">+${extra}개 더보기</div>`:''}</div>`;
+    shown.forEach(e=>{
+      const line = document.createElement('div');
+      line.className = 'evline' + (e.done ? ' done' : '');
+      line.style.borderLeftColor = CAT_COLORS[e.category];
+      line.textContent = e.title;
+      if(e.id){
+        line.draggable = true;
+        line.addEventListener('dragstart', ev=>{ ev.stopPropagation(); ev.dataTransfer.setData('text/plain', JSON.stringify({kind:e.kind, id:e.id})); });
+      }
+      listDiv.appendChild(line);
+    });
+    if(extra>0){ const more=document.createElement('div'); more.className='more'; more.textContent = `+${extra}개 더보기`; listDiv.appendChild(more); }
+    cell.innerHTML = '';
+    cell.appendChild(numDiv);
+    cell.appendChild(listDiv);
     cell.addEventListener('click', ()=>openDayPopover(dateStr, cell));
     cell.addEventListener('dragover', e=>{ e.preventDefault(); cell.classList.add('dragover'); });
     cell.addEventListener('dragleave', ()=>cell.classList.remove('dragover'));
@@ -533,7 +551,7 @@ function openDayPopover(dateStr, cellEl){
     row.dataset.kind=e.kind; row.dataset.id=e.id||'';
     row.innerHTML = `
       <div class="tag"><i class="legend-dot" style="background:${CAT_COLORS[e.category]}"></i>${e.category}${e.kind!=='event'?' (자동)':''}</div>
-      <div class="ptitle">${e.title}</div>
+      <div class="ptitle${e.kind==='event' && e.done ? ' done' : ''}">${e.kind==='event' ? `<input type="checkbox" class="pev-done" ${e.done?'checked':''}>` : ''}<span>${e.title}</span></div>
       <div class="pdetail">${e.detail||''}</div>
       ${e.kind==='event' ? `
         <ul class="psteps">${(e.steps||[]).map((st,i)=>`<li class="${st.done?'done':''}" data-i="${i}"><input type="checkbox" ${st.done?'checked':''}><span>${st.text}</span><button class="del-pstep">×</button></li>`).join('')}</ul>
@@ -556,15 +574,26 @@ function openDayPopover(dateStr, cellEl){
     }
     if(e.kind==='event'){
       const evObj = events.find(x=>x.id===e.id);
+      async function pushChecklist(){
+        try{ await api('updateEventChecklist', {pageId:evObj.id, done:evObj.done, steps:evObj.steps}); }
+        catch(err){ alert('저장 실패: '+err.message); }
+      }
+      row.querySelector('.pev-done').addEventListener('change', async ev=>{
+        evObj.done = ev.target.checked;
+        row.querySelector('.ptitle').classList.toggle('done', evObj.done);
+        await pushChecklist();
+        renderCalendar();
+      });
       row.querySelectorAll('.psteps li').forEach(li=>{
         const i = parseInt(li.dataset.i);
         li.querySelector('input').addEventListener('change', async ev=>{
           evObj.steps[i].done = ev.target.checked;
-          try{ await api('updateEvent', {pageId:evObj.id, steps:evObj.steps}); }catch(err){ alert('저장 실패: '+err.message); }
+          li.classList.toggle('done', ev.target.checked);
+          await pushChecklist();
         });
         li.querySelector('.del-pstep').addEventListener('click', async ()=>{
           evObj.steps.splice(i,1);
-          try{ await api('updateEvent', {pageId:evObj.id, steps:evObj.steps}); }catch(err){ alert('저장 실패: '+err.message); }
+          await pushChecklist();
           openDayPopover(dateStr, cellEl);
         });
       });
@@ -572,7 +601,7 @@ function openDayPopover(dateStr, cellEl){
         const inp = row.querySelector('.padd-step input');
         if(!inp.value.trim()) return;
         evObj.steps.push({text:inp.value.trim(), done:false});
-        try{ await api('updateEvent', {pageId:evObj.id, steps:evObj.steps}); }catch(err){ alert('저장 실패: '+err.message); }
+        await pushChecklist();
         openDayPopover(dateStr, cellEl);
       });
       row.querySelector('.pev-edit').addEventListener('click', ()=>row.querySelector('.pedit-fields').classList.toggle('open'));
@@ -618,7 +647,7 @@ document.getElementById('ne-save').addEventListener('click', async ()=>{
   if(!title||!date){ alert('제목과 날짜를 입력해주세요.'); return; }
   try{
     const result = await api('createEvent', {title,date,note,category,steps:[]});
-    events.push({id:result.id, title, date, note, category, steps:[]});
+    events.push({id:result.id, title, date, note, category, steps:[], done:false});
     renderCalendar();
     ['ne-title','ne-date','ne-note'].forEach(id=>document.getElementById(id).value='');
     document.getElementById('new-event-form').classList.remove('open');
