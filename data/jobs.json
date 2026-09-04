@@ -1,39 +1,557 @@
 {
-  "updatedAt": "2026-09-04T00:00:00.000Z",
+  "updatedAt": "2026-09-04T03:58:03.263Z",
   "jobs": [
-    {"title":"신한투자증권 | 리서치본부 RA 공개채용 (신입)", "company":"신한투자증권", "location":"영등포구", "size":"대기업", "employment":"계약직", "deadline":"2026-09-20", "status":"검토중", "priority":"상", "score":85, "link":"https://recruit.shinhansec.com/recruit/list.do"},
-    {"title":"EY한영 | 컨설팅부문 데이터 분석 인턴", "company":"EY한영", "location":"기타(서울/수원)", "size":"대기업", "employment":"계약직", "deadline":"2026-09-08", "status":"검토중", "priority":"상", "score":80, "link":"https://eycareers-kr.recruiter.co.kr/career/jobs/127054"},
-    {"title":"[인턴] CEO Staff - Research Analyst (전환형)", "company":"에프앤엘코퍼레이션", "location":"영등포구", "size":"스타트업", "employment":"전환형인턴", "deadline":null, "status":"검토중", "priority":null, "score":62, "link":null},
-    {"title":"메가존클라우드 | 경영전략실 전략 기획 담당자", "company":"메가존클라우드", "location":"기타(경기 과천)", "size":"중견기업", "employment":"정규직", "deadline":null, "status":"신규", "priority":"중", "score":60, "link":"https://career.megazone.com/job_posting/euYYvGF6"},
-    {"title":"[인턴] Strategy & Operation (전환형)", "company":"업스테이지", "location":"기타", "size":"스타트업", "employment":"전환형인턴", "deadline":null, "status":"검토중", "priority":null, "score":55, "link":"http://wntd.co/a1cf583e"},
-    {"title":"EY한영 | 컨설팅부문 SAP SuccessFactors 컨설턴트 인턴", "company":"EY한영", "location":"영등포구", "size":"대기업", "employment":"계약직", "deadline":"2026-09-06", "status":"스킵", "priority":"중", "score":40, "link":"https://eycareers-kr.recruiter.co.kr/career/jobs/126753"},
-    {"title":"에이피알 | 2026 하반기 신입 대규모 채용 (경영지원)", "company":"에이피알(APR)", "location":"기타(송파구)", "size":"중견기업", "employment":"정규직", "deadline":"2026-09-20", "status":"신규", "priority":"하", "score":35, "link":"https://apr-careers.com/2026recruit"},
-    {"title":"DB그룹 | 2026년 하반기 신입사원 공개채용 (경영지원)", "company":"DB그룹", "location":"기타", "size":"대기업", "employment":"정규직", "deadline":"2026-10-02", "status":"신규", "priority":"하", "score":30, "link":"https://inthiswork.com/archives/392757"},
-    {"title":"현대그룹 | 2026 하반기 신입 매니저 채용 (경영관리)", "company":"현대그룹", "location":"기타", "size":"대기업", "employment":"정규직", "deadline":"2026-09-22", "status":"신규", "priority":"하", "score":25, "link":"https://careers.hyundaigroup.com/jobs/RC20260828033768"},
-    {"title":"해태제과식품 | 채용연계형 인턴 모집 (일반관리)", "company":"해태제과식품", "location":"기타(용산구)", "size":"중견기업", "employment":"계약직", "deadline":"2026-09-14", "status":"신규", "priority":"하", "score":25, "link":"https://recruit.ht.co.kr/notification/view.aspx?EMP_NO=00473"},
-    {"title":"데이원컴퍼니 | AI/TECH 교육상품 기획자 (전환형인턴)", "company":"데이원컴퍼니", "location":"기타(강남구)", "size":"중견기업", "employment":"전환형인턴", "deadline":null, "status":"스킵", "priority":"하", "score":10, "link":"https://day1company.ninehire.site/job_posting/ruQTrLYn"},
-    {"title":"[효성ITX] 데이터 분석가", "company":"효성ITX㈜", "location":"영등포구", "size":"대기업", "employment":"정규직", "deadline":"2026-09-08", "status":"신규", "priority":null, "score":null, "link":"https://m.jobkorea.co.kr/Recruit/GI_Read/49549595?sc=640"},
-    {"title":"[비투엔] [신입] 데이터 아키텍처(DA) 담당자", "company":"(주)비투엔", "location":"영등포구", "size":"중소기업", "employment":"정규직", "deadline":"2026-09-26", "status":"신규", "priority":null, "score":null, "link":"https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=list&rec_idx=54867291"},
-    {"title":"[비투엔] [신입] AI 엔지니어 업무 담당자", "company":"(주)비투엔", "location":"영등포구", "size":"중소기업", "employment":"정규직", "deadline":"2026-09-26", "status":"신규", "priority":null, "score":null, "link":"https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=list&rec_idx=54867263"},
-    {"title":"[AI사업] Data Analyst (체험형 인턴)", "company":"㈜누리미디어", "location":"마포구", "size":"중소기업", "employment":"계약직", "deadline":"2026-10-12", "status":"신규", "priority":null, "score":null, "link":"https://m.jobkorea.co.kr/Recruit/GI_Read/49775220?sc=640"},
-    {"title":"AI 어플리케이션 개발자 모집", "company":"(주)엘핀", "location":"강서구", "size":"스타트업", "employment":"정규직", "deadline":"2026-10-19", "status":"신규", "priority":null, "score":null, "link":"https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=54797532"},
-    {"title":"알볼로에프앤씨 정보데이터팀 채용공고", "company":"(주)알볼로에프앤씨", "location":"양천구", "size":"확인필요", "employment":"정규직", "deadline":"2026-09-24", "status":"신규", "priority":null, "score":null, "link":"https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=54841078"},
-    {"title":"[AX/신입] AI서비스 기획자(PM/PO)", "company":"(주)아티언스", "location":"마포구", "size":"중소기업", "employment":"정규직", "deadline":"2026-09-14", "status":"신규", "priority":null, "score":null, "link":"https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=54749329"},
-    {"title":"2026년 하반기 키움증권 대졸 신입사원 공개채용", "company":"키움증권(주)", "location":"영등포구", "size":"대기업", "employment":"정규직", "deadline":"2026-09-13", "status":"검토중", "priority":null, "score":null, "link":"https://www.kiwoom.com/h/ir/recruit/VJobOpeningView"},
-    {"title":"AI Native 전문기업 코그니텀 AI연구원 채용", "company":"코그니텀㈜", "location":"강서구", "size":"스타트업", "employment":"정규직", "deadline":"2026-10-29", "status":"신규", "priority":null, "score":null, "link":"https://m.jobkorea.co.kr/Recruit/GI_Read/49883214"},
-    {"title":"솔루션/컨설팅/금융공학팀 신입·경력 채용", "company":"주식회사 아이티에스코", "location":"마포구", "size":"중소기업", "employment":"정규직", "deadline":"2026-09-08", "status":"신규", "priority":null, "score":null, "link":"https://www.saramin.co.kr/zf_user/search?searchType=search&searchword=아이티에스코"},
-    {"title":"기술개발본부 연구&개발 채용(Web, AI)", "company":"(주)맥케이", "location":"강서구", "size":"스타트업", "employment":"정규직", "deadline":"2026-09-10", "status":"신규", "priority":null, "score":null, "link":"https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=list&rec_idx=54712323"},
-    {"title":"2026년 하반기 (주)아하 및 그룹사 신입 공개채용", "company":"(주)아하", "location":"강서구", "size":"확인필요", "employment":"정규직", "deadline":"2026-09-13", "status":"신규", "priority":null, "score":null, "link":"https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=list&rec_idx=54856417"},
-    {"title":"투자자문 전문인력 채용공고", "company":"(주)트러스트투자자문", "location":"영등포구", "size":"중소기업", "employment":"정규직", "deadline":null, "status":"신규", "priority":null, "score":null, "link":"https://m.jobkorea.co.kr/Recruit/GI_Read/49863064"},
-    {"title":"금융AI투자콘텐츠 기획자 (주니어급)", "company":"(주)씽크풀", "location":"영등포구", "size":"중소기업", "employment":"정규직", "deadline":"2026-09-20", "status":"신규", "priority":null, "score":null, "link":"https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=list&rec_idx=54531103"},
-    {"title":"코리아PDS 국제원자재 Data Scientist & Analyst", "company":"(주)코리아피디에스", "location":"마포구", "size":"중소기업", "employment":"정규직", "deadline":"2026-09-30", "status":"신규", "priority":null, "score":null, "link":"https://m.jobkorea.co.kr/Recruit/GI_Read/49813344"},
-    {"title":"Business Analyst 비즈니스 애널리스트", "company":"스마트오에스씨코리아(유)", "location":"영등포구", "size":"확인필요", "employment":"정규직", "deadline":null, "status":"신규", "priority":null, "score":null, "link":"https://m.jobkorea.co.kr/Recruit/GI_Read/49600562"},
-    {"title":"2026년 하반기 KB국민은행 신입행원 — ICT(AI·플랫폼개발)", "company":"KB국민은행", "location":"영등포구", "size":"대기업", "employment":"정규직", "deadline":"2026-09-09", "status":"신규", "priority":null, "score":null, "link":"https://jobs.kbstar.com/"},
-    {"title":"금융AI투자콘텐츠 기획자", "company":"(주)씽크풀", "location":"영등포구", "size":"중소기업", "employment":"정규직", "deadline":"2026-09-09", "status":"신규", "priority":null, "score":null, "link":"https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=list&rec_idx=54704860"},
-    {"title":"2026년 하반기 LG CNS 신입사원 채용 — AI(AX) 트랙", "company":"LG CNS", "location":"강서구", "size":"대기업", "employment":"정규직", "deadline":"2026-09-14", "status":"검토중", "priority":null, "score":null, "link":"https://careers.lg.com/apply/detail?id=1002127"},
-    {"title":"리서치기관 (주)에스티아이 인턴연구원(전환형)", "company":"㈜에스티아이", "location":"영등포구", "size":"중소기업", "employment":"전환형인턴", "deadline":"2026-09-03", "status":"스킵", "priority":null, "score":null, "link":"https://m.jobkorea.co.kr/Recruit/GI_Read/49867950"},
-    {"title":"파이썬 기반 의료영상 AI개발자", "company":"(주)유스바이오글로벌", "location":"구로구", "size":"확인필요", "employment":"정규직", "deadline":"2026-09-09", "status":"스킵", "priority":null, "score":null, "link":"https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=list&rec_idx=54697586"},
-    {"title":"[정식투자자문사 파이온] 경제방송 주식 전문가 채용", "company":"(주)파이온투자자문", "location":"영등포구", "size":"확인필요", "employment":"정규직", "deadline":"2026-09-03", "status":"스킵", "priority":null, "score":null, "link":"https://m.jobkorea.co.kr/Recruit/GI_Read/49717097"},
-    {"title":"[(주)싸이버로지텍] 항만 IT 솔루션 비즈니스 컨설턴트", "company":"(주)싸이버로지텍", "location":"마포구", "size":"중견기업", "employment":"정규직", "deadline":"2026-08-30", "status":"마감", "priority":null, "score":null, "link":"https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=list&rec_idx=54615978"}
+    {
+      "id": "3d139273-b462-8144-ab86-cf86b8e8769b",
+      "title": "DB그룹 | 2026년 하반기 신입사원 공개채용 (경영지원)",
+      "company": "DB그룹",
+      "location": "기타",
+      "size": "대기업",
+      "employment": "정규직",
+      "deadline": "2026-10-02",
+      "status": "신규",
+      "priority": "하",
+      "score": 30,
+      "fields": [
+        "기타"
+      ],
+      "link": "https://inthiswork.com/archives/392757"
+    },
+    {
+      "id": "3d139273-b462-8176-a19f-d2640760ade9",
+      "title": "신한투자증권 | 리서치본부 RA 공개채용 (신입)",
+      "company": "신한투자증권",
+      "location": "영등포구",
+      "size": "대기업",
+      "employment": "계약직",
+      "deadline": "2026-09-20",
+      "status": "검토중",
+      "priority": "상",
+      "score": 85,
+      "fields": [
+        "리서치애널리스트"
+      ],
+      "link": "https://recruit.shinhansec.com/recruit/list.do"
+    },
+    {
+      "id": "3d139273-b462-8195-a97e-eb65c82a235b",
+      "title": "해태제과식품 | 채용연계형 인턴 모집 (일반관리)",
+      "company": "해태제과식품",
+      "location": "기타",
+      "size": "중견기업",
+      "employment": "계약직",
+      "deadline": "2026-09-14",
+      "status": "신규",
+      "priority": "하",
+      "score": 25,
+      "fields": [
+        "기타"
+      ],
+      "link": "https://recruit.ht.co.kr/notification/view.aspx?EMP_NO=00473"
+    },
+    {
+      "id": "3d139273-b462-81a3-9f80-cb6468b8108c",
+      "title": "에이피알 | 2026 하반기 신입 대규모 채용 (경영지원)",
+      "company": "에이피알(APR)",
+      "location": "기타",
+      "size": "중견기업",
+      "employment": "정규직",
+      "deadline": "2026-09-20",
+      "status": "신규",
+      "priority": "하",
+      "score": 35,
+      "fields": [
+        "기타"
+      ],
+      "link": "https://apr-careers.com/2026recruit"
+    },
+    {
+      "id": "3d139273-b462-81b2-b70d-f2038bd8f64d",
+      "title": "EY한영 | 컨설팅부문 데이터 분석 인턴",
+      "company": "EY한영",
+      "location": "기타",
+      "size": "대기업",
+      "employment": "계약직",
+      "deadline": "2026-09-08",
+      "status": "검토중",
+      "priority": "상",
+      "score": 80,
+      "fields": [
+        "데이터분석가",
+        "리서치애널리스트"
+      ],
+      "link": "https://eycareers-kr.recruiter.co.kr/career/jobs/127054"
+    },
+    {
+      "id": "3d139273-b462-81b7-8cf5-ce402bfbf4ce",
+      "title": "메가존클라우드 | 경영전략실 전략 기획 담당자",
+      "company": "메가존클라우드",
+      "location": "기타",
+      "size": "중견기업",
+      "employment": "정규직",
+      "deadline": null,
+      "status": "신규",
+      "priority": "중",
+      "score": 60,
+      "fields": [
+        "비즈니스애널리스트"
+      ],
+      "link": "https://career.megazone.com/job_posting/euYYvGF6"
+    },
+    {
+      "id": "3d139273-b462-81c2-9dfe-efe57e880a69",
+      "title": "현대그룹 | 2026 하반기 신입 매니저 채용 (경영관리)",
+      "company": "현대그룹(현대엘리베이터·현대무벡스)",
+      "location": "기타",
+      "size": "대기업",
+      "employment": "정규직",
+      "deadline": "2026-09-22",
+      "status": "신규",
+      "priority": "하",
+      "score": 25,
+      "fields": [
+        "기타"
+      ],
+      "link": "https://careers.hyundaigroup.com/jobs/RC20260828033768"
+    },
+    {
+      "id": "3d139273-b462-81de-8266-d6164716af65",
+      "title": "EY한영 | 컨설팅부문 SAP SuccessFactors 컨설턴트 인턴",
+      "company": "EY한영",
+      "location": "영등포구",
+      "size": "대기업",
+      "employment": "계약직",
+      "deadline": "2026-09-06",
+      "status": "스킵",
+      "priority": "중",
+      "score": 40,
+      "fields": [
+        "기타"
+      ],
+      "link": "https://eycareers-kr.recruiter.co.kr/career/jobs/126753"
+    },
+    {
+      "id": "3d139273-b462-81e1-a76d-e7545123f731",
+      "title": "데이원컴퍼니 | [데이원글로벌][전환형인턴] AI/TECH 교육상품 기획자",
+      "company": "데이원컴퍼니",
+      "location": "기타",
+      "size": "중견기업",
+      "employment": "전환형인턴",
+      "deadline": null,
+      "status": "스킵",
+      "priority": "하",
+      "score": 10,
+      "fields": [
+        "AI기획자"
+      ],
+      "link": "https://day1company.ninehire.site/job_posting/ruQTrLYn"
+    },
+    {
+      "id": "3d039273-b462-81f9-a1d5-ca35b6ed0676",
+      "title": "[인턴] CEO Staff - Research Analyst (전환형) - 에프앤엘코퍼레이션",
+      "company": "에프앤엘코퍼레이션",
+      "location": "영등포구",
+      "size": "스타트업",
+      "employment": "전환형인턴",
+      "deadline": null,
+      "status": "검토중",
+      "priority": null,
+      "score": 62,
+      "fields": [
+        "리서치애널리스트"
+      ],
+      "link": null
+    },
+    {
+      "id": "3d039273-b462-814b-9872-fe9546c35788",
+      "title": "[인턴] Strategy & Operation (전환형) - 업스테이지",
+      "company": "업스테이지",
+      "location": "기타",
+      "size": "스타트업",
+      "employment": "전환형인턴",
+      "deadline": null,
+      "status": "검토중",
+      "priority": null,
+      "score": 55,
+      "fields": [
+        "AI기획자"
+      ],
+      "link": "http://wntd.co/a1cf583e"
+    },
+    {
+      "id": "3cf39273-b462-815b-b42d-dc19e2f03b8e",
+      "title": "2026년 하반기 LG CNS 신입사원 채용 — AI(AX) 트랙",
+      "company": "LG CNS",
+      "location": "강서구",
+      "size": "대기업",
+      "employment": "정규직",
+      "deadline": "2026-09-14",
+      "status": "검토중",
+      "priority": null,
+      "score": null,
+      "fields": [
+        "기타"
+      ],
+      "link": "https://careers.lg.com/apply/detail?id=1002127"
+    },
+    {
+      "id": "3cf39273-b462-815f-acba-d2fa869d4fe0",
+      "title": "금융AI투자콘텐츠 기획자",
+      "company": "(주)씽크풀",
+      "location": "영등포구",
+      "size": "중소기업",
+      "employment": "정규직",
+      "deadline": "2026-09-09",
+      "status": "신규",
+      "priority": null,
+      "score": null,
+      "fields": [
+        "AI기획자"
+      ],
+      "link": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=list&rec_idx=54704860"
+    },
+    {
+      "id": "3cf39273-b462-818e-9344-db8e861e1e34",
+      "title": "2026년 하반기 KB국민은행 신입행원 채용 — ICT(AI·플랫폼개발) 부문",
+      "company": "KB국민은행",
+      "location": "영등포구",
+      "size": "대기업",
+      "employment": "정규직",
+      "deadline": "2026-09-09",
+      "status": "신규",
+      "priority": null,
+      "score": null,
+      "fields": [
+        "데이터분석가",
+        "AI기획자"
+      ],
+      "link": "https://jobs.kbstar.com/"
+    },
+    {
+      "id": "3cf39273-b462-818f-88da-e66f2c3f0253",
+      "title": "Business Analyst 비즈니스 애널리스트",
+      "company": "스마트오에스씨코리아(유)",
+      "location": "영등포구",
+      "size": "확인필요",
+      "employment": "정규직",
+      "deadline": null,
+      "status": "신규",
+      "priority": null,
+      "score": null,
+      "fields": [
+        "비즈니스애널리스트"
+      ],
+      "link": "https://m.jobkorea.co.kr/Recruit/GI_Read/49600562"
+    },
+    {
+      "id": "3cf39273-b462-819f-bbbb-e399ee02f30d",
+      "title": "코리아PDS 국제원자재 Data Scientist & Analyst 모집",
+      "company": "(주)코리아피디에스",
+      "location": "마포구",
+      "size": "중소기업",
+      "employment": "정규직",
+      "deadline": "2026-09-30",
+      "status": "신규",
+      "priority": null,
+      "score": null,
+      "fields": [
+        "데이터사이언티스트",
+        "리서치애널리스트"
+      ],
+      "link": "https://m.jobkorea.co.kr/Recruit/GI_Read/49813344"
+    },
+    {
+      "id": "3cf39273-b462-81a6-bd6e-cb1ae78489ec",
+      "title": "[정식투자자문사 파이온] 경제방송 주식 전문가 채용",
+      "company": "(주)파이온투자자문",
+      "location": "영등포구",
+      "size": "확인필요",
+      "employment": "정규직",
+      "deadline": "2026-09-03",
+      "status": "스킵",
+      "priority": null,
+      "score": null,
+      "fields": [
+        "리서치애널리스트"
+      ],
+      "link": "https://m.jobkorea.co.kr/Recruit/GI_Read/49717097"
+    },
+    {
+      "id": "3cf39273-b462-81b1-ae6a-dfb204477f39",
+      "title": "금융AI투자콘텐츠 기획자 (주니어급)",
+      "company": "(주)씽크풀",
+      "location": "영등포구",
+      "size": "중소기업",
+      "employment": "정규직",
+      "deadline": "2026-09-20",
+      "status": "신규",
+      "priority": null,
+      "score": null,
+      "fields": [
+        "AI기획자"
+      ],
+      "link": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=list&rec_idx=54531103"
+    },
+    {
+      "id": "3cf39273-b462-81c2-96a7-ccd3da635357",
+      "title": "투자자문 전문인력 채용공고",
+      "company": "(주)트러스트투자자문",
+      "location": "영등포구",
+      "size": "중소기업",
+      "employment": "정규직",
+      "deadline": null,
+      "status": "신규",
+      "priority": null,
+      "score": null,
+      "fields": [
+        "리서치애널리스트"
+      ],
+      "link": "https://m.jobkorea.co.kr/Recruit/GI_Read/49863064"
+    },
+    {
+      "id": "3ce39273-b462-8119-8b77-d3036ca5dde8",
+      "title": "[(주)싸이버로지텍] 항만 IT 솔루션 비즈니스 컨설턴트",
+      "company": "(주)싸이버로지텍",
+      "location": "마포구",
+      "size": "중견기업",
+      "employment": "정규직",
+      "deadline": "2026-08-30",
+      "status": "마감",
+      "priority": null,
+      "score": null,
+      "fields": [
+        "비즈니스애널리스트"
+      ],
+      "link": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=list&rec_idx=54615978"
+    },
+    {
+      "id": "3ce39273-b462-813e-9303-fb3b2cfbdf13",
+      "title": "2026년 하반기 (주)아하 및 그룹사 신입 공개채용",
+      "company": "(주)아하",
+      "location": "강서구",
+      "size": null,
+      "employment": "정규직",
+      "deadline": "2026-09-13",
+      "status": "신규",
+      "priority": null,
+      "score": null,
+      "fields": [
+        "데이터분석가"
+      ],
+      "link": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=list&rec_idx=54856417"
+    },
+    {
+      "id": "3ce39273-b462-8146-b367-ce4cd70e8252",
+      "title": "파이썬 기반 의료영상 AI개발자",
+      "company": "(주)유스바이오글로벌",
+      "location": "구로구",
+      "size": null,
+      "employment": "정규직",
+      "deadline": "2026-09-09",
+      "status": "스킵",
+      "priority": null,
+      "score": null,
+      "fields": [
+        "데이터사이언티스트"
+      ],
+      "link": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=list&rec_idx=54697586"
+    },
+    {
+      "id": "3ce39273-b462-814b-95f5-fc486379c6df",
+      "title": "(주)맥케이 2026년 기술개발본부 연구&개발 채용(Web, AI)",
+      "company": "(주)맥케이",
+      "location": "강서구",
+      "size": "스타트업",
+      "employment": "정규직",
+      "deadline": "2026-09-10",
+      "status": "신규",
+      "priority": null,
+      "score": null,
+      "fields": [
+        "데이터사이언티스트",
+        "AI기획자"
+      ],
+      "link": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=list&rec_idx=54712323"
+    },
+    {
+      "id": "3ce39273-b462-8162-a7b8-dda2451a765b",
+      "title": "솔루션개발팀/솔루션컨설팅팀/금융공학팀 신입·경력 채용",
+      "company": "주식회사 아이티에스코",
+      "location": "마포구",
+      "size": "중소기업",
+      "employment": "정규직",
+      "deadline": "2026-09-08",
+      "status": "신규",
+      "priority": null,
+      "score": null,
+      "fields": [
+        "데이터분석가",
+        "데이터사이언티스트"
+      ],
+      "link": "https://www.saramin.co.kr/zf_user/search?searchType=search&searchword=아이티에스코"
+    },
+    {
+      "id": "3ce39273-b462-81a7-ac26-f5f6000550f0",
+      "title": "리서치기관 (주)에스티아이 공개채용 인턴연구원(정규직 전환형)",
+      "company": "㈜에스티아이",
+      "location": "영등포구",
+      "size": "중소기업",
+      "employment": "전환형인턴",
+      "deadline": "2026-09-03",
+      "status": "스킵",
+      "priority": null,
+      "score": null,
+      "fields": [
+        "리서치애널리스트"
+      ],
+      "link": "https://m.jobkorea.co.kr/Recruit/GI_Read/49867950"
+    },
+    {
+      "id": "3ce39273-b462-81bb-b708-c32a22262bbf",
+      "title": "AI Native 전문기업 코그니텀 AI연구원 채용",
+      "company": "코그니텀㈜",
+      "location": "강서구",
+      "size": "스타트업",
+      "employment": "정규직",
+      "deadline": "2026-10-29",
+      "status": "신규",
+      "priority": null,
+      "score": null,
+      "fields": [
+        "데이터사이언티스트",
+        "AI기획자"
+      ],
+      "link": "https://m.jobkorea.co.kr/Recruit/GI_Read/49883214"
+    },
+    {
+      "id": "3ce39273-b462-81c0-ad33-e64d09734532",
+      "title": "2026년 하반기 키움증권 대졸 신입사원 공개채용",
+      "company": "키움증권(주)",
+      "location": "영등포구",
+      "size": "대기업",
+      "employment": "정규직",
+      "deadline": "2026-09-13",
+      "status": "검토중",
+      "priority": null,
+      "score": null,
+      "fields": [
+        "데이터분석가",
+        "비즈니스애널리스트"
+      ],
+      "link": "https://www.kiwoom.com/h/ir/recruit/VJobOpeningView"
+    },
+    {
+      "id": "3cd39273-b462-813c-9f4e-ecf1c085a481",
+      "title": "[AX/신입] AI서비스 기획자(PM/PO)",
+      "company": "(주)아티언스",
+      "location": "마포구",
+      "size": "중소기업",
+      "employment": "정규직",
+      "deadline": "2026-09-14",
+      "status": "신규",
+      "priority": null,
+      "score": null,
+      "fields": [
+        "AI기획자"
+      ],
+      "link": "https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=54749329"
+    },
+    {
+      "id": "3cd39273-b462-813e-8e7f-d1cf277b0b1a",
+      "title": "(주)알볼로에프앤씨 정보데이터팀 채용공고(신입/경력)",
+      "company": "(주)알볼로에프앤씨",
+      "location": "양천구",
+      "size": "확인필요",
+      "employment": "정규직",
+      "deadline": "2026-09-24",
+      "status": "신규",
+      "priority": null,
+      "score": null,
+      "fields": [
+        "데이터분석가"
+      ],
+      "link": "https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=54841078"
+    },
+    {
+      "id": "3cd39273-b462-8195-bb47-f6ac7a77db0a",
+      "title": "AI 어플리케이션 개발자 모집",
+      "company": "(주)엘핀",
+      "location": "강서구",
+      "size": "스타트업",
+      "employment": "정규직",
+      "deadline": "2026-10-19",
+      "status": "신규",
+      "priority": null,
+      "score": null,
+      "fields": [
+        "데이터사이언티스트"
+      ],
+      "link": "https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=54797532"
+    },
+    {
+      "id": "3ca39273-b462-8118-a64e-d2e2a5c684fe",
+      "title": "[AI사업] Data Analyst (체험형 인턴)",
+      "company": "㈜누리미디어",
+      "location": "마포구",
+      "size": "중소기업",
+      "employment": "계약직",
+      "deadline": "2026-10-12",
+      "status": "신규",
+      "priority": null,
+      "score": null,
+      "fields": [
+        "데이터분석가"
+      ],
+      "link": "https://m.jobkorea.co.kr/Recruit/GI_Read/49775220?sc=640"
+    },
+    {
+      "id": "3ca39273-b462-8176-834d-e6ebd6557fb7",
+      "title": "[비투엔] [신입] AI 엔지니어 업무 담당자",
+      "company": "(주)비투엔",
+      "location": "영등포구",
+      "size": "중소기업",
+      "employment": "정규직",
+      "deadline": "2026-09-26",
+      "status": "신규",
+      "priority": null,
+      "score": null,
+      "fields": [
+        "데이터사이언티스트"
+      ],
+      "link": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=list&rec_idx=54867263"
+    },
+    {
+      "id": "3ca39273-b462-81c0-8175-e56f6115e2c4",
+      "title": "[비투엔] [신입] 데이터 아키텍처(DA) 담당자 채용",
+      "company": "(주)비투엔",
+      "location": "영등포구",
+      "size": "중소기업",
+      "employment": "정규직",
+      "deadline": "2026-09-26",
+      "status": "신규",
+      "priority": null,
+      "score": null,
+      "fields": [
+        "데이터분석가",
+        "데이터사이언티스트"
+      ],
+      "link": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=list&rec_idx=54867291"
+    },
+    {
+      "id": "3ca39273-b462-81c2-8885-d352f9c41e51",
+      "title": "[효성ITX] 데이터 분석가",
+      "company": "효성ITX㈜",
+      "location": "영등포구",
+      "size": "대기업",
+      "employment": "정규직",
+      "deadline": "2026-09-08",
+      "status": "신규",
+      "priority": null,
+      "score": null,
+      "fields": [
+        "데이터분석가"
+      ],
+      "link": "https://m.jobkorea.co.kr/Recruit/GI_Read/49549595?sc=640"
+    }
   ]
 }
