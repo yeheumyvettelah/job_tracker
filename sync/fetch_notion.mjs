@@ -106,11 +106,24 @@ function mapSkill(page) {
 
 function mapEvent(page) {
   const p = page.properties;
+  let steps = [];
+  let done = false;
+  const raw = val(p["체크리스트_JSON"]);
+  if (raw) {
+    try {
+      const parsed = JSON.parse(raw);
+      steps = parsed.steps || [];
+      done = !!parsed.done;
+    } catch { /* 무시 */ }
+  }
   return {
     id: page.id,
     title: val(p["제목"]),
     date: val(p["날짜"]),
     note: val(p["메모"]),
+    category: val(p["카테고리"]) || "개인일정",
+    steps,
+    done,
   };
 }
 
