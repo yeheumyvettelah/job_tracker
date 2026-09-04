@@ -36,7 +36,7 @@
   .note-banner{background:#FFF8EC;border:1px solid #EFDBAE;color:#7A5A16;font-size:0.76rem;padding:9px 14px;border-radius:8px;margin-bottom:16px;}
   .note-banner.err{background:#FBEAE7;border-color:#E3B3A8;color:#8A3A2B;}
 
-  .kanban{display:grid;grid-template-columns:repeat(5,1fr);gap:10px;overflow-x:auto;}
+  .kanban{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;overflow-x:auto;}
   .kcol{background:#EAEBE6;border-radius:var(--radius);padding:10px;min-height:220px;}
   .kcol.dragover{outline:2px dashed var(--navy);}
   .kcol h3{font-size:0.82rem;color:var(--navy);margin-bottom:8px;display:flex;justify-content:space-between;}
@@ -53,6 +53,7 @@
   .job-card .foot{display:flex;justify-content:space-between;align-items:center;}
   .badge-dday{font-size:0.68rem;font-weight:600;padding:2px 7px;border-radius:999px;background:var(--low-bg);color:var(--low);}
   .badge-dday.urgent{background:var(--hi-bg);color:var(--hi);} .badge-dday.soon{background:var(--mid-bg);color:var(--mid);}
+  .job-card select.status-select{margin-top:8px;width:100%;font-size:0.72rem;padding:4px 6px;border:1px solid var(--line);border-radius:6px;font-family:inherit;background:var(--paper);color:var(--ink);}
   .job-card a{font-size:0.7rem;color:var(--navy);text-decoration:none;font-weight:600;}
 
   .skill-toolbar{display:flex;justify-content:flex-end;margin-bottom:14px;}
@@ -207,7 +208,8 @@ const APP_SECRET = "nicevictory2028";       // wrangler secret put APP_SECRET �
 
 const TODAY = new Date();
 let jobs = [], skills = [], events = [];
-const STATUSES = ["신규","검토중","지원함","스킵","마감"];
+const ALL_STATUSES = ["신규","검토중","지원함","스킵","마감"];
+const VISIBLE_STATUSES = ["신규","검토중","지원함"];
 
 function dday(dateStr){
   if(!dateStr) return null;
@@ -283,6 +285,16 @@ function renderStrip(){
 }
 
 // ---------- kanban (jobs) ----------
+async function changeJobStatus(j, newStatus){
+  if(!j.id){ alert('이 카드는 아직 실제 동기화 전이라(테스트 데이터) 상태를 바꿀 수 없어요. Actions를 한 번 실행하면 됩니다.'); return; }
+  if(j.status === newStatus) return;
+  const prev = j.status;
+  j.status = newStatus;
+  renderKanban();
+  try{ await api('updateJobStatus', {pageId:j.id, status:newStatus}); }
+  catch(err){ j.status = prev; renderKanban(); alert('저장 실패: '+err.message); }
+}
+
 function jobCard(j){
   const dd = ddayLabel(j.deadline);
   const p = j.priority || '미평가';
@@ -297,7 +309,13 @@ function jobCard(j){
     <div class="foot">
       <span class="badge-dday ${dd.cls}">${dd.text}</span>
       ${j.link?`<a href="${j.link}" target="_blank" rel="noopener">보기 ↗</a>`:''}
-    </div>`;
+    </div>
+    <select class="status-select">
+      ${ALL_STATUSES.map(s=>`<option value="${s}" ${s===j.status?'selected':''}>${s}</option>`).join('')}
+    </select>`;
+  const sel = div.querySelector('.status-select');
+  sel.addEventListener('mousedown', (e)=>e.stopPropagation());
+  sel.addEventListener('change', (e)=>changeJobStatus(j, e.target.value));
   div.addEventListener('dragstart', (e)=>{
     if(!j.id){ e.preventDefault(); alert('이 카드는 아직 실제 동기화 전이라(테스트 데이터) 드래그할 수 없어요. Actions를 한 번 실행하면 됩니다.'); return; }
     e.dataTransfer.setData('text/plain', JSON.stringify({kind:'job', id:j.id}));
@@ -309,7 +327,7 @@ function jobCard(j){
 function renderKanban(){
   const board = document.getElementById('kanban');
   board.innerHTML='';
-  STATUSES.forEach(status=>{
+  VISIBLE_STATUSES.forEach(status=>{
     const col = document.createElement('div');
     col.className='kcol';
     col.dataset.status = status;
