@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-04T16:06:36.683Z",
+  "updatedAt": "2026-09-04T20:36:36.625Z",
   "jobs": [
     {
       "id": "3d139273-b462-8144-ab86-cf86b8e8769b",
@@ -73,7 +73,7 @@
       "size": "대기업",
       "employment": "계약직",
       "deadline": "2026-09-08",
-      "status": "검토중",
+      "status": "지원함",
       "priority": "상",
       "score": 80,
       "fields": [
