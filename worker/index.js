@@ -55,6 +55,16 @@ async function handle(body, env){
           "체크리스트_JSON": { rich_text: rt(JSON.stringify({ steps: payload.steps, note: payload.note })) },
         },
       });
+    case "updateSkillMeta":
+      return notion(env, `/pages/${payload.pageId}`, "PATCH", {
+        properties: {
+          ...(payload.name !== undefined ? { "항목명": { title: rt(payload.name) } } : {}),
+          ...(payload.category !== undefined ? { "카테고리": { select: { name: payload.category } } } : {}),
+          ...(payload.goal !== undefined ? { "목표": { rich_text: rt(payload.goal) } } : {}),
+          ...(payload.targetDate !== undefined ? { "목표일_시험일": { date: dateVal(payload.targetDate) } } : {}),
+          ...(payload.weeklyHours !== undefined ? { "주간 목표 학습시간(h)": { number: payload.weeklyHours } } : {}),
+        },
+      });
     case "updateSkillTargetDate":
       return notion(env, `/pages/${payload.pageId}`, "PATCH", {
         properties: { "목표일_시험일": { date: dateVal(payload.targetDate) } },
@@ -82,6 +92,8 @@ async function handle(body, env){
           "제목": { title: rt(payload.title) },
           "날짜": { date: dateVal(payload.date) },
           "메모": { rich_text: rt(payload.note) },
+          "카테고리": { select: { name: payload.category || "개인일정" } },
+          "체크리스트_JSON": { rich_text: rt(JSON.stringify({ steps: payload.steps || [] })) },
         },
       });
     case "updateEvent":
@@ -90,6 +102,8 @@ async function handle(body, env){
           ...(payload.title !== undefined ? { "제목": { title: rt(payload.title) } } : {}),
           ...(payload.date !== undefined ? { "날짜": { date: dateVal(payload.date) } } : {}),
           ...(payload.note !== undefined ? { "메모": { rich_text: rt(payload.note) } } : {}),
+          ...(payload.category !== undefined ? { "카테고리": { select: { name: payload.category } } } : {}),
+          ...(payload.steps !== undefined ? { "체크리스트_JSON": { rich_text: rt(JSON.stringify({ steps: payload.steps })) } } : {}),
         },
       });
     case "deleteEvent":
