@@ -108,13 +108,14 @@
   .color-pick{width:20px;height:20px;border:none;padding:0;border-radius:4px;vertical-align:middle;cursor:pointer;}
   .grid7{display:grid;grid-template-columns:repeat(7,1fr);gap:6px;}
   .grid7 .dow{text-align:center;font-size:0.74rem;color:var(--ink-soft);padding:4px 0;}
-  .day-cell{background:var(--paper);border:1px solid var(--line);border-radius:8px;min-height:76px;padding:6px;font-size:0.78rem;cursor:pointer;}
+  .day-cell{background:var(--paper);border:1px solid var(--line);border-radius:8px;min-height:104px;padding:6px;font-size:0.78rem;cursor:pointer;}
   .day-cell.empty{background:transparent;border:none;cursor:default;}
   .day-cell.today{border-color:var(--navy);border-width:2px;}
   .day-cell.dragover{outline:2px dashed var(--green);}
   .day-cell .num{color:var(--ink-soft);margin-bottom:4px;}
-  .day-cell .dots{display:flex;gap:3px;flex-wrap:wrap;}
-  .day-cell .dots i{width:6px;height:6px;border-radius:50%;display:inline-block;}
+  .day-cell .evlist{display:flex;flex-direction:column;gap:2px;}
+  .day-cell .evline{font-size:0.68rem;padding:1px 4px;border-left:3px solid transparent;background:var(--bg);border-radius:3px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;color:var(--ink);}
+  .day-cell .more{font-size:0.68rem;color:var(--ink-soft);padding-left:4px;}
   .cal-add-btn{margin-bottom:14px;}
 
   /* popover */
@@ -468,7 +469,9 @@ function renderCalendar(){
     const cell=document.createElement('div'); cell.className='day-cell';
     if(dateStr===toISODate(TODAY)) cell.classList.add('today');
     const dayEvents=EVENTS.filter(e=>e.date===dateStr);
-    cell.innerHTML=`<div class="num">${d}</div><div class="dots">${dayEvents.map(e=>`<i style="background:${CAT_COLORS[e.category]}"></i>`).join('')}</div>`;
+    const shown = dayEvents.slice(0,3);
+    const extra = dayEvents.length - shown.length;
+    cell.innerHTML=`<div class="num">${d}</div><div class="evlist">${shown.map(e=>`<div class="evline" style="border-left-color:${CAT_COLORS[e.category]}">${e.title}</div>`).join('')}${extra>0?`<div class="more">+${extra}개 더보기</div>`:''}</div>`;
     cell.addEventListener('click', ()=>openDayPopover(dateStr, cell));
     cell.addEventListener('dragover', e=>{ e.preventDefault(); cell.classList.add('dragover'); });
     cell.addEventListener('dragleave', ()=>cell.classList.remove('dragover'));
