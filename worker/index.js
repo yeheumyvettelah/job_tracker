@@ -93,7 +93,7 @@ async function handle(body, env){
           "날짜": { date: dateVal(payload.date) },
           "메모": { rich_text: rt(payload.note) },
           "카테고리": { select: { name: payload.category || "개인일정" } },
-          "체크리스트_JSON": { rich_text: rt(JSON.stringify({ steps: payload.steps || [] })) },
+          "체크리스트_JSON": { rich_text: rt(JSON.stringify({ done: false, steps: payload.steps || [] })) },
         },
       });
     case "updateEvent":
@@ -103,7 +103,12 @@ async function handle(body, env){
           ...(payload.date !== undefined ? { "날짜": { date: dateVal(payload.date) } } : {}),
           ...(payload.note !== undefined ? { "메모": { rich_text: rt(payload.note) } } : {}),
           ...(payload.category !== undefined ? { "카테고리": { select: { name: payload.category } } } : {}),
-          ...(payload.steps !== undefined ? { "체크리스트_JSON": { rich_text: rt(JSON.stringify({ steps: payload.steps })) } } : {}),
+        },
+      });
+    case "updateEventChecklist":
+      return notion(env, `/pages/${payload.pageId}`, "PATCH", {
+        properties: {
+          "체크리스트_JSON": { rich_text: rt(JSON.stringify({ done: !!payload.done, steps: payload.steps || [] })) },
         },
       });
     case "deleteEvent":
