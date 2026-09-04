@@ -450,7 +450,7 @@ function renderLegend(){
 
 function allEvents(){
   const evs=[];
-  jobs.forEach(j=>{ if(j.deadline && j.status!=='마감' && j.status!=='스킵') evs.push({kind:'job',id:j.id,date:j.deadline,category:'공고관련',title:j.company+' 마감',detail:j.title,steps:null}); });
+  jobs.forEach(j=>{ if(j.deadline && (j.status==='신규' || j.status==='검토중')) evs.push({kind:'job',id:j.id,date:j.deadline,category:'공고관련',title:j.company+' 마감',detail:j.title,steps:null}); });
   skills.forEach(s=>{ if(s.targetDate) evs.push({kind:'skill',id:s.id,date:s.targetDate,category:'스킬관련',title:(s.name||'').split(' — ')[0]+' 목표일',detail:s.goal||'',steps:null}); });
   events.forEach(ev=>{ if(ev.date) evs.push({kind:'event',id:ev.id,date:ev.date,category:ev.category||'개인일정',title:ev.title,detail:ev.note||'',steps:ev.steps||[]}); });
   return evs;
