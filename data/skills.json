@@ -1,13 +1,48 @@
 {
-  "updatedAt": "2026-09-05T10:20:58.062Z",
+  "updatedAt": "2026-09-05T14:56:25.706Z",
   "skills": [
+    {
+      "id": "3d239273-b462-81d5-bb56-d9d7706ba6ca",
+      "name": "취업준비 General",
+      "category": "기타",
+      "goal": "9월 둘째 주 목표",
+      "method": "",
+      "status": "계획중",
+      "startDate": null,
+      "targetDate": "2026-09-12",
+      "weeklyHours": null,
+      "progress": 0,
+      "steps": [
+        {
+          "text": "키움증권 지원",
+          "done": false
+        },
+        {
+          "text": "LG CNS 지원",
+          "done": false
+        },
+        {
+          "text": "범용 자기소개서 / 이력서 만들기",
+          "done": false
+        },
+        {
+          "text": "사람인 즉시지원 준비",
+          "done": false
+        },
+        {
+          "text": "잡코리아 즉시지원 준비",
+          "done": false
+        }
+      ],
+      "note": ""
+    },
     {
       "id": "3d139273-b462-8190-b36c-ea45820e394f",
       "name": "빅데이터분석기사 필기",
       "category": "자격증",
       "goal": "",
       "method": "",
-      "status": "계획중",
+      "status": "완료",
       "startDate": null,
       "targetDate": "2026-09-05",
       "weeklyHours": null,
