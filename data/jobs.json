@@ -1,6 +1,22 @@
 {
-  "updatedAt": "2026-09-07T04:42:11.310Z",
+  "updatedAt": "2026-09-07T12:07:12.154Z",
   "jobs": [
+    {
+      "id": "3d439273-b462-8166-97c2-f0d33af2bb84",
+      "title": "2026 하반기 신입 공채 — AI/데이터엔지니어링 (AI 전략기획·거버넌스·AX)",
+      "company": "㈜효성",
+      "location": "마포구",
+      "size": "대기업",
+      "employment": "정규직",
+      "deadline": "2026-09-20",
+      "status": "신규",
+      "priority": null,
+      "score": null,
+      "fields": [
+        "AI기획자"
+      ],
+      "link": "https://hyosung.recruiter.co.kr/app/jobnotice/view?systemKindCode=MRS2&jobnoticeSn=265361"
+    },
     {
       "id": "3d439273-b462-8124-9f5c-eca7e7b4a40c",
       "title": "AI 품질 평가 및 데이터 분류_어시스턴트",
@@ -9,7 +25,7 @@
       "size": "대기업",
       "employment": "계약직",
       "deadline": "2026-09-15",
-      "status": "신규",
+      "status": "마감",
       "priority": null,
       "score": null,
       "fields": [
@@ -121,7 +137,7 @@
       "size": "대기업",
       "employment": "계약직",
       "deadline": null,
-      "status": "신규",
+      "status": "스킵",
       "priority": null,
       "score": null,
       "fields": [
@@ -137,7 +153,7 @@
       "size": "중견기업",
       "employment": "정규직",
       "deadline": null,
-      "status": "신규",
+      "status": "스킵",
       "priority": null,
       "score": null,
       "fields": [
@@ -218,7 +234,7 @@
       "size": "대기업",
       "employment": "계약직",
       "deadline": null,
-      "status": "신규",
+      "status": "스킵",
       "priority": null,
       "score": null,
       "fields": [
@@ -267,7 +283,7 @@
       "size": "대기업",
       "employment": "계약직",
       "deadline": null,
-      "status": "신규",
+      "status": "마감",
       "priority": null,
       "score": null,
       "fields": [
