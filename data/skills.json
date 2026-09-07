@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-06T20:15:19.471Z",
+  "updatedAt": "2026-09-07T03:59:14.116Z",
   "skills": [
     {
       "id": "3d239273-b462-81d5-bb56-d9d7706ba6ca",
@@ -32,22 +32,12 @@
         {
           "text": "잡코리아 즉시지원 준비",
           "done": false
+        },
+        {
+          "text": "포트폴리오 제작 시작",
+          "done": false
         }
       ],
-      "note": ""
-    },
-    {
-      "id": "3d139273-b462-8190-b36c-ea45820e394f",
-      "name": "빅데이터분석기사 필기",
-      "category": "자격증",
-      "goal": "",
-      "method": "",
-      "status": "완료",
-      "startDate": null,
-      "targetDate": "2026-09-05",
-      "weeklyHours": null,
-      "progress": 0,
-      "steps": [],
       "note": ""
     },
     {
@@ -58,22 +48,22 @@
       "method": "실기 기출문제 반복 풀이 중심, 엑셀/액세스 실기 동영상 강의 병행",
       "status": "계획중",
       "startDate": null,
-      "targetDate": "2026-09-28",
+      "targetDate": "2026-10-12",
       "weeklyHours": null,
       "progress": 0,
       "steps": [
         {
           "text": "공부 방법 정리",
-          "done": false
+          "done": true
         }
       ],
       "note": ""
     },
     {
       "id": "3d139273-b462-814f-87c5-e07e91fbe244",
-      "name": "일본어 — JLPT N2 (비즈니스 수준 목표)",
+      "name": "일본어 — JLPT N4",
       "category": "어학",
-      "goal": "2026년 12월 회차 JLPT N2 합격. 장기적으로 BJT(비즈니스 일본어 시험)까지 연계.",
+      "goal": "2026년 12월 회차 JLPT N4 합격. 장기적으로는 JLPT N4 (비즈니스 수준), BJT(비즈니스 일본어 시험)까지 연계.",
       "method": "1단계(진행중) 히라가나/가타카나+Genki I 기초문법 → 2단계 Genki II/N4~N3 어휘 800~1500개 → 3단계 総まとめ 시리즈로 N3~N2 심화 → 병행: 비즈니스 경어/이메일 표현 별도 학습. 매일 Anki 암기 15분 + 주 1회 온라인 강의/스터디 권장(논문·취업준비와 병행 가능한 페이스).",
       "status": "계획중",
       "startDate": "2026-09-04",

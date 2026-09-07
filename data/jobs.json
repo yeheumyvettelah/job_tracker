@@ -1,6 +1,297 @@
 {
-  "updatedAt": "2026-09-06T20:15:19.221Z",
+  "updatedAt": "2026-09-07T03:59:13.785Z",
   "jobs": [
+    {
+      "id": "3d439273-b462-8124-9f5c-eca7e7b4a40c",
+      "title": "AI 품질 평가 및 데이터 분류_어시스턴트",
+      "company": "(주)카카오",
+      "location": "기타",
+      "size": "대기업",
+      "employment": "계약직",
+      "deadline": "2026-09-15",
+      "status": "신규",
+      "priority": null,
+      "score": null,
+      "fields": [
+        "데이터분석가"
+      ],
+      "link": "https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=52541308"
+    },
+    {
+      "id": "3d439273-b462-8129-a71f-d08ac85aff48",
+      "title": "Business Analyst Intern (경력무관)",
+      "company": "(주)이큐브랩",
+      "location": "구로구",
+      "size": "스타트업",
+      "employment": "계약직",
+      "deadline": "2026-09-07",
+      "status": "신규",
+      "priority": "상",
+      "score": null,
+      "fields": [
+        "비즈니스애널리스트"
+      ],
+      "link": "https://m.saramin.co.kr/job-search/view?rec_idx=48753866"
+    },
+    {
+      "id": "3d439273-b462-813d-809a-c2adc37d2dda",
+      "title": "RA 채용",
+      "company": "EON Group(이언그룹)",
+      "location": null,
+      "size": "확인필요",
+      "employment": "계약직",
+      "deadline": "2026-09-11",
+      "status": "신규",
+      "priority": "상",
+      "score": null,
+      "fields": [
+        "리서치애널리스트"
+      ],
+      "link": "https://www.insightbay.co.kr/v2/positions/view/88/1"
+    },
+    {
+      "id": "3d439273-b462-813e-9fe5-fdb2f9eafc3a",
+      "title": "Research Associate 인턴",
+      "company": "Altus (비하베스트)",
+      "location": null,
+      "size": "확인필요",
+      "employment": "계약직",
+      "deadline": "2026-12-31",
+      "status": "신규",
+      "priority": null,
+      "score": null,
+      "fields": [
+        "리서치애널리스트"
+      ],
+      "link": "https://www.insightbay.co.kr/v2/positions/view/85/1"
+    },
+    {
+      "id": "3d439273-b462-8147-a5c1-f6600dc84beb",
+      "title": "신사업 전략 수립 프로젝트 RA",
+      "company": "PwC Strategy& (유)프라이스워터하우스쿠퍼스컨설팅",
+      "location": null,
+      "size": "대기업",
+      "employment": "계약직",
+      "deadline": "2026-09-08",
+      "status": "신규",
+      "priority": "상",
+      "score": null,
+      "fields": [
+        "리서치애널리스트"
+      ],
+      "link": "https://www.insightbay.co.kr/v2/positions/view/89/1"
+    },
+    {
+      "id": "3d439273-b462-816c-ac42-d841aca54de5",
+      "title": "Associate Consultant Trainee Program (ACT)",
+      "company": "베인앤드컴퍼니코리아",
+      "location": null,
+      "size": "대기업",
+      "employment": "정규직",
+      "deadline": null,
+      "status": "신규",
+      "priority": null,
+      "score": null,
+      "fields": [
+        "리서치애널리스트"
+      ],
+      "link": "https://inthiswork.com/archives/395568"
+    },
+    {
+      "id": "3d439273-b462-816e-bca9-f1f0b987bac4",
+      "title": "HR컨설팅 프로젝트 운영지원",
+      "company": "KMAC 한국능률협회컨설팅",
+      "location": null,
+      "size": "중견기업",
+      "employment": "계약직",
+      "deadline": null,
+      "status": "신규",
+      "priority": null,
+      "score": null,
+      "fields": [
+        "리서치애널리스트"
+      ],
+      "link": "https://inthiswork.com/archives/393585"
+    },
+    {
+      "id": "3d439273-b462-819b-908f-eee362d31f37",
+      "title": "자동차 산업 CRM 컨설팅 인턴",
+      "company": "EY한영",
+      "location": null,
+      "size": "대기업",
+      "employment": "계약직",
+      "deadline": null,
+      "status": "신규",
+      "priority": null,
+      "score": null,
+      "fields": [
+        "리서치애널리스트"
+      ],
+      "link": "https://inthiswork.com/archives/392584"
+    },
+    {
+      "id": "3d439273-b462-819c-b41e-ffdcfe1d037b",
+      "title": "[고등] 온라인 입시 데이터 분석 채용 (경력무관)",
+      "company": "메가스터디교육",
+      "location": null,
+      "size": "중견기업",
+      "employment": "정규직",
+      "deadline": null,
+      "status": "신규",
+      "priority": null,
+      "score": null,
+      "fields": [
+        "데이터분석가"
+      ],
+      "link": "https://inthiswork.com/archives/392644"
+    },
+    {
+      "id": "3d439273-b462-81a8-bd13-c710724c4620",
+      "title": "Research Analyst Intern",
+      "company": "카탈라이즈",
+      "location": null,
+      "size": "확인필요",
+      "employment": "계약직",
+      "deadline": null,
+      "status": "신규",
+      "priority": null,
+      "score": null,
+      "fields": [
+        "리서치애널리스트"
+      ],
+      "link": "https://inthiswork.com/archives/392278"
+    },
+    {
+      "id": "3d439273-b462-81b2-a6fc-c0e18c84948a",
+      "title": "2027 Summer Associate Internship, Korea",
+      "company": "Boston Consulting Group (BCG)",
+      "location": null,
+      "size": "대기업",
+      "employment": "계약직",
+      "deadline": null,
+      "status": "신규",
+      "priority": null,
+      "score": null,
+      "fields": [
+        "리서치애널리스트"
+      ],
+      "link": "https://inthiswork.com/archives/395564"
+    },
+    {
+      "id": "3d439273-b462-81b9-aeeb-c6ba6f1100b3",
+      "title": "RA 채용공고",
+      "company": "(주)키투웨이",
+      "location": null,
+      "size": "확인필요",
+      "employment": "계약직",
+      "deadline": "2026-09-08",
+      "status": "신규",
+      "priority": "상",
+      "score": null,
+      "fields": [
+        "리서치애널리스트"
+      ],
+      "link": "https://www.insightbay.co.kr/v2/positions/view/92/1"
+    },
+    {
+      "id": "3d439273-b462-81c0-8e35-c217b7c6111f",
+      "title": "공공부문(데이터 품질관리) 프로젝트 운영지원",
+      "company": "KMAC 한국능률협회컨설팅",
+      "location": null,
+      "size": "중견기업",
+      "employment": "계약직",
+      "deadline": null,
+      "status": "신규",
+      "priority": null,
+      "score": null,
+      "fields": [
+        "데이터분석가",
+        "리서치애널리스트"
+      ],
+      "link": "https://inthiswork.com/archives/393642"
+    },
+    {
+      "id": "3d439273-b462-81c7-af8a-c6d16f9a4317",
+      "title": "컨설팅부문 수요예측 모델 고도화 인턴",
+      "company": "EY한영",
+      "location": null,
+      "size": "대기업",
+      "employment": "계약직",
+      "deadline": null,
+      "status": "신규",
+      "priority": null,
+      "score": null,
+      "fields": [
+        "데이터분석가",
+        "리서치애널리스트"
+      ],
+      "link": "https://inthiswork.com/archives/393862"
+    },
+    {
+      "id": "3d439273-b462-81c8-b8bd-cc8a15a6139f",
+      "title": "프로젝트 RA 모집",
+      "company": "PwC Strategy& (유)프라이스워터하우스쿠퍼스컨설팅",
+      "location": null,
+      "size": "대기업",
+      "employment": "계약직",
+      "deadline": "2026-09-09",
+      "status": "신규",
+      "priority": "상",
+      "score": null,
+      "fields": [
+        "리서치애널리스트"
+      ],
+      "link": "https://www.insightbay.co.kr/v2/positions/view/86/1"
+    },
+    {
+      "id": "3d439273-b462-81cb-befc-fdcfa487f1dc",
+      "title": "ERP컨설턴트 정규직 전환형 인턴",
+      "company": "(주)더존비즈온",
+      "location": "기타",
+      "size": "중견기업",
+      "employment": "전환형인턴",
+      "deadline": "2026-09-07",
+      "status": "신규",
+      "priority": "상",
+      "score": null,
+      "fields": [
+        "비즈니스애널리스트"
+      ],
+      "link": "https://m.saramin.co.kr/job-search/company-info-view/recruit?csn=bmJNSnpSYmdjUCs3bGoyQ1ZSNUZYdz09"
+    },
+    {
+      "id": "3d439273-b462-81da-83db-fcdf3656b547",
+      "title": "SG본부 ESG&Strategy팀 인턴",
+      "company": "삼정KPMG",
+      "location": null,
+      "size": "대기업",
+      "employment": "계약직",
+      "deadline": null,
+      "status": "신규",
+      "priority": null,
+      "score": null,
+      "fields": [
+        "리서치애널리스트"
+      ],
+      "link": "https://inthiswork.com/archives/392496"
+    },
+    {
+      "id": "3d439273-b462-81ef-993c-fbe90aa3d2ff",
+      "title": "컨설팅부문 고객 분석 및 추천모델 개발 인턴",
+      "company": "EY한영",
+      "location": null,
+      "size": "대기업",
+      "employment": "계약직",
+      "deadline": null,
+      "status": "신규",
+      "priority": null,
+      "score": null,
+      "fields": [
+        "데이터분석가",
+        "리서치애널리스트"
+      ],
+      "link": "https://inthiswork.com/archives/393864"
+    },
     {
       "id": "3d139273-b462-8144-ab86-cf86b8e8769b",
       "title": "DB그룹 | 2026년 하반기 신입사원 공개채용 (경영지원)",
@@ -545,7 +836,7 @@
       "size": "대기업",
       "employment": "정규직",
       "deadline": "2026-09-08",
-      "status": "신규",
+      "status": "스킵",
       "priority": null,
       "score": null,
       "fields": [
