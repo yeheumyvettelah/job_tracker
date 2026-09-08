@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-08T04:01:24.953Z",
+  "updatedAt": "2026-09-08T10:59:20.082Z",
   "skills": [
     {
       "id": "3d239273-b462-81d5-bb56-d9d7706ba6ca",
@@ -15,7 +15,7 @@
       "steps": [
         {
           "text": "키움증권 지원",
-          "done": false
+          "done": true
         },
         {
           "text": "LG CNS 지원",
