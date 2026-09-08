@@ -1,6 +1,118 @@
 {
-  "updatedAt": "2026-09-07T21:22:41.610Z",
+  "updatedAt": "2026-09-08T02:49:07.283Z",
   "jobs": [
+    {
+      "id": "3d539273-b462-812f-bc2b-e168a0ffec98",
+      "title": "Data Product Manager (Mart/API)",
+      "company": "토스뱅크(주)",
+      "location": "기타",
+      "size": "대기업",
+      "employment": "정규직",
+      "deadline": "2026-09-15",
+      "status": "신규",
+      "priority": "상",
+      "score": null,
+      "fields": [
+        "비즈니스애널리스트"
+      ],
+      "link": "https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=54254265"
+    },
+    {
+      "id": "3d539273-b462-813e-913a-d8c20b131660",
+      "title": "[kt alpha] kt알파 쇼핑 Data Analyst 및 Data Engineer 채용",
+      "company": "(주)케이티알파",
+      "location": "기타",
+      "size": "중견기업",
+      "employment": "정규직",
+      "deadline": "2026-10-05",
+      "status": "신규",
+      "priority": null,
+      "score": null,
+      "fields": [
+        "데이터분석가"
+      ],
+      "link": "https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=54965448"
+    },
+    {
+      "id": "3d539273-b462-8185-b17e-d0c15347fc57",
+      "title": "Research Analyst, Expert Network (Nathan Research Group)",
+      "company": "네이슨리서치그룹",
+      "location": "기타",
+      "size": "중소기업",
+      "employment": "정규직",
+      "deadline": "2026-09-19",
+      "status": "신규",
+      "priority": null,
+      "score": null,
+      "fields": [
+        "리서치애널리스트"
+      ],
+      "link": "https://www.jobkorea.co.kr/Recruit/GI_Read/49621833"
+    },
+    {
+      "id": "3d539273-b462-8188-8b89-f6992644fcc9",
+      "title": "[Kearney Korea] RA(인턴) 모집 공고 (UX/UI)",
+      "company": "에이티커니코리아(Kearney Korea)",
+      "location": "기타",
+      "size": "대기업",
+      "employment": "계약직",
+      "deadline": "2026-09-20",
+      "status": "신규",
+      "priority": null,
+      "score": null,
+      "fields": [
+        "리서치애널리스트"
+      ],
+      "link": "https://www.insightbay.co.kr/v2/positions/view/98/1"
+    },
+    {
+      "id": "3d539273-b462-81bd-a915-e5d739240d53",
+      "title": "[보령 CHQ] Strategy Investment Group Analyst (인턴)",
+      "company": "(주)보령",
+      "location": "기타",
+      "size": "중견기업",
+      "employment": "전환형인턴",
+      "deadline": "2026-10-12",
+      "status": "신규",
+      "priority": null,
+      "score": null,
+      "fields": [
+        "비즈니스애널리스트"
+      ],
+      "link": "https://www.jobkorea.co.kr/Recruit/GI_Read/49774538"
+    },
+    {
+      "id": "3d539273-b462-81c0-b885-e55260de68a5",
+      "title": "한국투자공사(KIC) 2026년 신입직원 채용",
+      "company": "한국투자공사",
+      "location": "기타",
+      "size": "대기업",
+      "employment": "정규직",
+      "deadline": "2026-09-18",
+      "status": "신규",
+      "priority": null,
+      "score": null,
+      "fields": [
+        "리서치애널리스트"
+      ],
+      "link": "https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=54868788"
+    },
+    {
+      "id": "3d539273-b462-81f8-89ab-fd16af80e04c",
+      "title": "26년 하반기 신입사원 채용 (데이터 사이언티스트/데이터)",
+      "company": "에이치디한국조선해양(주)",
+      "location": "기타",
+      "size": "대기업",
+      "employment": "정규직",
+      "deadline": "2026-09-27",
+      "status": "신규",
+      "priority": null,
+      "score": null,
+      "fields": [
+        "데이터사이언티스트"
+      ],
+      "link": "https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=54914017"
+    },
     {
       "id": "3d439273-b462-8166-97c2-f0d33af2bb84",
       "title": "2026 하반기 신입 공채 — AI/데이터엔지니어링 (AI 전략기획·거버넌스·AX)",
@@ -9,7 +121,7 @@
       "size": "대기업",
       "employment": "정규직",
       "deadline": "2026-09-20",
-      "status": "신규",
+      "status": "검토중",
       "priority": null,
       "score": null,
       "fields": [
@@ -41,7 +153,7 @@
       "size": "스타트업",
       "employment": "계약직",
       "deadline": "2026-09-07",
-      "status": "신규",
+      "status": "마감",
       "priority": "상",
       "score": null,
       "fields": [
@@ -267,7 +379,7 @@
       "size": "중견기업",
       "employment": "전환형인턴",
       "deadline": "2026-09-07",
-      "status": "신규",
+      "status": "마감",
       "priority": "상",
       "score": null,
       "fields": [
