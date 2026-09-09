@@ -1,6 +1,135 @@
 {
-  "updatedAt": "2026-09-08T20:59:00.901Z",
+  "updatedAt": "2026-09-09T04:08:15.554Z",
   "jobs": [
+    {
+      "id": "3d639273-b462-8101-833f-dc1bc5da8805",
+      "title": "Research Assistant (Intern), Business Strategy",
+      "company": "Hebronstar Strategy Consultants (헤브론스타)",
+      "location": "기타",
+      "size": "중소기업",
+      "employment": "계약직",
+      "deadline": "2026-09-11",
+      "status": "신규",
+      "priority": "상",
+      "score": null,
+      "fields": [
+        "리서치애널리스트"
+      ],
+      "link": "https://www.insightbay.co.kr/v2/positions/view/102/1"
+    },
+    {
+      "id": "3d639273-b462-810e-b8bf-ca7f4222daf7",
+      "title": "경영 컨설턴트 (신입/경력, 상시모집)",
+      "company": "가인지컨설팅그룹",
+      "location": "마포구",
+      "size": "중소기업",
+      "employment": "정규직",
+      "deadline": null,
+      "status": "신규",
+      "priority": null,
+      "score": null,
+      "fields": [
+        "리서치애널리스트"
+      ],
+      "link": "https://inthiswork.com/archives/395766"
+    },
+    {
+      "id": "3d639273-b462-8110-89d2-d84c8eac61d8",
+      "title": "Associate, Client Service, Korean/English Speaker (2027 입사)",
+      "company": "AlphaSights",
+      "location": "기타",
+      "size": "대기업",
+      "employment": "정규직",
+      "deadline": null,
+      "status": "신규",
+      "priority": null,
+      "score": null,
+      "fields": [
+        "리서치애널리스트"
+      ],
+      "link": "https://inthiswork.com/archives/395900"
+    },
+    {
+      "id": "3d639273-b462-8110-a7e8-f12cf0e73637",
+      "title": "2026년 하반기 신입/경력 직원 수시채용",
+      "company": "나이스평가정보㈜",
+      "location": "영등포구",
+      "size": "대기업",
+      "employment": "정규직",
+      "deadline": "2026-09-21",
+      "status": "신규",
+      "priority": null,
+      "score": null,
+      "fields": [
+        "데이터분석가",
+        "리서치애널리스트"
+      ],
+      "link": "https://m.jobkorea.co.kr/Recruit/GI_Read/49861942"
+    },
+    {
+      "id": "3d639273-b462-813b-84b4-ead4e60c8b42",
+      "title": "Project Intern (Research Assistant)",
+      "company": "Alvarez & Marsal Korea",
+      "location": "기타",
+      "size": "대기업",
+      "employment": "계약직",
+      "deadline": "2026-09-09",
+      "status": "신규",
+      "priority": "상",
+      "score": null,
+      "fields": [
+        "리서치애널리스트"
+      ],
+      "link": "https://www.insightbay.co.kr/v2/positions/view/99/1"
+    },
+    {
+      "id": "3d639273-b462-818b-837f-d6e1fc7ac177",
+      "title": "RA (Research Associate) 채용",
+      "company": "GICG (글로벌아이앤컴퍼니그룹)",
+      "location": "기타",
+      "size": "중소기업",
+      "employment": "계약직",
+      "deadline": "2026-09-12",
+      "status": "신규",
+      "priority": "상",
+      "score": null,
+      "fields": [
+        "리서치애널리스트"
+      ],
+      "link": "https://www.insightbay.co.kr/v2/positions/view/100/1"
+    },
+    {
+      "id": "3d639273-b462-81c4-9ba1-dd6e45cd8fc4",
+      "title": "AX Consultant Intern",
+      "company": "넥스트젠AI (NextGenAI)",
+      "location": "기타",
+      "size": "스타트업",
+      "employment": "계약직",
+      "deadline": "2026-09-30",
+      "status": "신규",
+      "priority": null,
+      "score": null,
+      "fields": [
+        "리서치애널리스트"
+      ],
+      "link": "https://inthiswork.com/archives/393972"
+    },
+    {
+      "id": "3d639273-b462-81db-bfee-e9e7de5450f5",
+      "title": "[직방] Corp. Dev. Business Analyst (Product Strategy)",
+      "company": "(주)직방",
+      "location": "기타",
+      "size": "중견기업",
+      "employment": "정규직",
+      "deadline": "2026-10-05",
+      "status": "신규",
+      "priority": null,
+      "score": null,
+      "fields": [
+        "비즈니스애널리스트"
+      ],
+      "link": "https://m.jobkorea.co.kr/Recruit/GI_Read/49728552"
+    },
     {
       "id": "3d539273-b462-812f-bc2b-e168a0ffec98",
       "title": "Data Product Manager (Mart/API)",
@@ -201,7 +330,7 @@
       "size": "대기업",
       "employment": "계약직",
       "deadline": "2026-09-08",
-      "status": "신규",
+      "status": "마감",
       "priority": "상",
       "score": null,
       "fields": [
@@ -213,10 +342,10 @@
       "id": "3d439273-b462-816c-ac42-d841aca54de5",
       "title": "Associate Consultant Trainee Program (ACT)",
       "company": "베인앤드컴퍼니코리아",
-      "location": null,
+      "location": "기타",
       "size": "대기업",
       "employment": "정규직",
-      "deadline": null,
+      "deadline": "2026-11-27",
       "status": "신규",
       "priority": null,
       "score": null,
@@ -313,7 +442,7 @@
       "size": "확인필요",
       "employment": "계약직",
       "deadline": "2026-09-08",
-      "status": "신규",
+      "status": "마감",
       "priority": "상",
       "score": null,
       "fields": [
