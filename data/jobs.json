@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-09T11:04:18.829Z",
+  "updatedAt": "2026-09-09T16:20:03.291Z",
   "jobs": [
     {
       "id": "3d639273-b462-8192-9278-e6384ddfb2ba",
@@ -26,7 +26,7 @@
       "size": "중소기업",
       "employment": "계약직",
       "deadline": "2026-09-11",
-      "status": "신규",
+      "status": "스킵",
       "priority": "상",
       "score": null,
       "fields": [
@@ -42,11 +42,11 @@
       "size": "중소기업",
       "employment": "정규직",
       "deadline": null,
-      "status": "신규",
-      "priority": null,
-      "score": null,
+      "status": "보류",
+      "priority": "하",
+      "score": 2,
       "fields": [
-        "리서치애널리스트"
+        "기타"
       ],
       "link": "https://inthiswork.com/archives/395766"
     },
@@ -91,7 +91,7 @@
       "size": "대기업",
       "employment": "계약직",
       "deadline": "2026-09-09",
-      "status": "신규",
+      "status": "마감",
       "priority": "상",
       "score": null,
       "fields": [
@@ -155,7 +155,7 @@
       "size": "대기업",
       "employment": "정규직",
       "deadline": "2026-09-15",
-      "status": "신규",
+      "status": "스킵",
       "priority": "상",
       "score": null,
       "fields": [
@@ -315,7 +315,7 @@
       "size": "확인필요",
       "employment": "계약직",
       "deadline": "2026-09-11",
-      "status": "신규",
+      "status": "스킵",
       "priority": "상",
       "score": null,
       "fields": [
@@ -331,7 +331,7 @@
       "size": "확인필요",
       "employment": "계약직",
       "deadline": "2026-12-31",
-      "status": "신규",
+      "status": "스킵",
       "priority": null,
       "score": null,
       "fields": [
@@ -427,7 +427,7 @@
       "size": "확인필요",
       "employment": "계약직",
       "deadline": null,
-      "status": "신규",
+      "status": "스킵",
       "priority": null,
       "score": null,
       "fields": [
@@ -509,7 +509,7 @@
       "size": "대기업",
       "employment": "계약직",
       "deadline": "2026-09-09",
-      "status": "신규",
+      "status": "마감",
       "priority": "상",
       "score": null,
       "fields": [
@@ -606,7 +606,7 @@
       "size": "중견기업",
       "employment": "계약직",
       "deadline": "2026-09-14",
-      "status": "신규",
+      "status": "스킵",
       "priority": "하",
       "score": 25,
       "fields": [
