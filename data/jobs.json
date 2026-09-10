@@ -1,6 +1,214 @@
 {
-  "updatedAt": "2026-09-10T04:06:00.267Z",
+  "updatedAt": "2026-09-10T11:00:26.754Z",
   "jobs": [
+    {
+      "id": "3d739273-b462-8105-a78d-d46778fd61d5",
+      "title": "Research Analyst (Intern)/RA — 백엔드 개발",
+      "company": "Kearney Korea (에이티커니코리아)",
+      "location": "기타",
+      "size": "대기업",
+      "employment": "계약직",
+      "deadline": "2026-09-30",
+      "status": "신규",
+      "priority": null,
+      "score": null,
+      "fields": [
+        "리서치애널리스트"
+      ],
+      "link": "https://www.insightbay.co.kr/v2/positions/view/114/1"
+    },
+    {
+      "id": "3d739273-b462-816a-aa02-da9930a861de",
+      "title": "프로젝트 RA — 글로벌 반도체 사업 전략",
+      "company": "PwC Consulting Strategy&",
+      "location": "기타",
+      "size": "대기업",
+      "employment": "계약직",
+      "deadline": "2026-09-11",
+      "status": "신규",
+      "priority": "상",
+      "score": null,
+      "fields": [
+        "리서치애널리스트"
+      ],
+      "link": "https://www.insightbay.co.kr/v2/positions/view/121/1"
+    },
+    {
+      "id": "3d739273-b462-816b-8f14-e9239f0c2142",
+      "title": "프로젝트 RA — AI 데이터거버넌스 PoC",
+      "company": "PwC Consulting",
+      "location": "기타",
+      "size": "대기업",
+      "employment": "계약직",
+      "deadline": "2026-09-18",
+      "status": "신규",
+      "priority": null,
+      "score": null,
+      "fields": [
+        "리서치애널리스트"
+      ],
+      "link": "https://www.insightbay.co.kr/v2/positions/view/120/1"
+    },
+    {
+      "id": "3d739273-b462-8170-9c47-e72d8d064382",
+      "title": "BCG AX Project SR",
+      "company": "Boston Consulting Group (BCG)",
+      "location": "기타",
+      "size": "대기업",
+      "employment": "계약직",
+      "deadline": "2026-09-14",
+      "status": "신규",
+      "priority": "상",
+      "score": null,
+      "fields": [
+        "리서치애널리스트"
+      ],
+      "link": "https://www.insightbay.co.kr/v2/positions/view/119/1"
+    },
+    {
+      "id": "3d739273-b462-817b-8ad7-e73167dababc",
+      "title": "Research Analyst (Intern) — 인터뷰 진행 보조",
+      "company": "Kearney Korea (에이티커니코리아)",
+      "location": "기타",
+      "size": "대기업",
+      "employment": "계약직",
+      "deadline": "2026-09-14",
+      "status": "신규",
+      "priority": "상",
+      "score": null,
+      "fields": [
+        "리서치애널리스트"
+      ],
+      "link": "https://www.insightbay.co.kr/v2/positions/view/115/1"
+    },
+    {
+      "id": "3d739273-b462-81a8-93de-c11c0c8af551",
+      "title": "프로젝트 RA (거제시)",
+      "company": "PwC Consulting",
+      "location": "기타",
+      "size": "대기업",
+      "employment": "계약직",
+      "deadline": "2026-09-18",
+      "status": "신규",
+      "priority": null,
+      "score": null,
+      "fields": [
+        "리서치애널리스트"
+      ],
+      "link": "https://www.insightbay.co.kr/v2/positions/view/116/1"
+    },
+    {
+      "id": "3d739273-b462-81af-94f3-c9d93c780955",
+      "title": "이차전지 소재사 R&D PI 프로젝트 RA",
+      "company": "PwC Consulting",
+      "location": "기타",
+      "size": "대기업",
+      "employment": "계약직",
+      "deadline": "2026-09-18",
+      "status": "신규",
+      "priority": null,
+      "score": null,
+      "fields": [
+        "리서치애널리스트"
+      ],
+      "link": "https://www.insightbay.co.kr/v2/positions/view/118/1"
+    },
+    {
+      "id": "3d739273-b462-81b3-83fc-ebe5b76888d8",
+      "title": "글로벌 전자회사 데이터표준화 RA (Data RA)",
+      "company": "에스코어(S-Core)",
+      "location": "기타",
+      "size": "중견기업",
+      "employment": "계약직",
+      "deadline": null,
+      "status": "신규",
+      "priority": null,
+      "score": 3,
+      "fields": [
+        "데이터분석가"
+      ],
+      "link": "https://www.insightbay.co.kr/v2/positions/view/122/1"
+    },
+    {
+      "id": "3d739273-b462-81c2-a2b8-f044d435cd2d",
+      "title": "Student Researcher (SR) — Pipe Due Diligence",
+      "company": "Boston Consulting Group (BCG)",
+      "location": "기타",
+      "size": "대기업",
+      "employment": "계약직",
+      "deadline": "2026-09-15",
+      "status": "신규",
+      "priority": "상",
+      "score": null,
+      "fields": [
+        "리서치애널리스트"
+      ],
+      "link": "https://www.insightbay.co.kr/v2/positions/view/123/1"
+    },
+    {
+      "id": "3d739273-b462-81c4-af3f-ebed1751cdbd",
+      "title": "Internship (채용형 인턴) — 전략컨설팅 RA",
+      "company": "Alvarez & Marsal Korea",
+      "location": "기타",
+      "size": "대기업",
+      "employment": "전환형인턴",
+      "deadline": "2026-09-20",
+      "status": "신규",
+      "priority": null,
+      "score": null,
+      "fields": [
+        "리서치애널리스트"
+      ],
+      "link": "https://www.insightbay.co.kr/v2/positions/view/124/1"
+    },
+    {
+      "id": "3d739273-b462-8115-ada4-d45802f2a27f",
+      "title": "2026년 하반기 신입사원 채용(AX_AI 개발)",
+      "company": "한화오션(주)",
+      "location": "기타",
+      "size": "대기업",
+      "employment": "정규직",
+      "deadline": "2026-09-30",
+      "status": "신규",
+      "priority": null,
+      "score": 5,
+      "fields": [
+        "AI기획자"
+      ],
+      "link": "https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=54910219"
+    },
+    {
+      "id": "3d739273-b462-816f-8607-d1d7f7f59ee8",
+      "title": "2026년 하반기 3급 신입사원 채용 공고 (기술직(AX 기획/운영))",
+      "company": "삼성이앤에이(주)",
+      "location": "기타",
+      "size": "대기업",
+      "employment": "정규직",
+      "deadline": "2026-09-15",
+      "status": "신규",
+      "priority": "상",
+      "score": 5,
+      "fields": [
+        "AI기획자"
+      ],
+      "link": "https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=54972889"
+    },
+    {
+      "id": "3d739273-b462-81d2-937d-ee5137e9d021",
+      "title": "하반기(9월) 신입사원 수시채용 (CTO-소재개발AX)",
+      "company": "(주)엘지에너지솔루션",
+      "location": "기타",
+      "size": "대기업",
+      "employment": "정규직",
+      "deadline": "2026-09-10",
+      "status": "보류",
+      "priority": null,
+      "score": 2,
+      "fields": [
+        "데이터분석가"
+      ],
+      "link": "https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=54869747"
+    },
     {
       "id": "3d639273-b462-8192-9278-e6384ddfb2ba",
       "title": "아모레퍼시픽 2026 하반기 신입사원 채용_채널영업전략",
