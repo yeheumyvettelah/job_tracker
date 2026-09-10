@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-10T16:10:57.049Z",
+  "updatedAt": "2026-09-10T20:41:51.656Z",
   "jobs": [
     {
       "id": "3d739273-b462-8105-a78d-d46778fd61d5",
@@ -25,7 +25,7 @@
       "size": "대기업",
       "employment": "계약직",
       "deadline": "2026-09-11",
-      "status": "신규",
+      "status": "스킵",
       "priority": "상",
       "score": null,
       "fields": [
@@ -57,7 +57,7 @@
       "size": "대기업",
       "employment": "계약직",
       "deadline": "2026-09-14",
-      "status": "신규",
+      "status": "지원함",
       "priority": "상",
       "score": null,
       "fields": [
@@ -73,7 +73,7 @@
       "size": "대기업",
       "employment": "계약직",
       "deadline": "2026-09-14",
-      "status": "신규",
+      "status": "스킵",
       "priority": "상",
       "score": null,
       "fields": [
@@ -89,7 +89,7 @@
       "size": "대기업",
       "employment": "계약직",
       "deadline": "2026-09-18",
-      "status": "신규",
+      "status": "스킵",
       "priority": null,
       "score": null,
       "fields": [
@@ -105,7 +105,7 @@
       "size": "대기업",
       "employment": "계약직",
       "deadline": "2026-09-18",
-      "status": "신규",
+      "status": "스킵",
       "priority": null,
       "score": null,
       "fields": [
@@ -137,7 +137,7 @@
       "size": "대기업",
       "employment": "계약직",
       "deadline": "2026-09-15",
-      "status": "신규",
+      "status": "스킵",
       "priority": "상",
       "score": null,
       "fields": [
