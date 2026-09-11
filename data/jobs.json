@@ -1,6 +1,70 @@
 {
-  "updatedAt": "2026-09-10T20:41:51.656Z",
+  "updatedAt": "2026-09-11T04:03:52.087Z",
   "jobs": [
+    {
+      "id": "3d839273-b462-8118-b155-fe1c3ccd3066",
+      "title": "[HYBE] 뮤직그룹전략실 RA(Research Assistant)(계약직)",
+      "company": "(주)하이브",
+      "location": "기타",
+      "size": "대기업",
+      "employment": "계약직",
+      "deadline": "2026-10-03",
+      "status": "신규",
+      "priority": null,
+      "score": null,
+      "fields": [
+        "리서치애널리스트"
+      ],
+      "link": "https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=54650494"
+    },
+    {
+      "id": "3d839273-b462-814b-9bb2-e62cdf6d8172",
+      "title": "2026 하반기 신입사원 채용 (AX-경영관리지능화)",
+      "company": "한화오션(주)",
+      "location": "기타",
+      "size": "대기업",
+      "employment": "정규직",
+      "deadline": "2026-09-30",
+      "status": "신규",
+      "priority": null,
+      "score": 5,
+      "fields": [
+        "AI기획자"
+      ],
+      "link": "https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=54910526"
+    },
+    {
+      "id": "3d839273-b462-815c-8a7e-faa9d3598763",
+      "title": "감사부문 디지털 감사 AI 리스크 분석 인턴 (전환형)",
+      "company": "EY한영",
+      "location": "영등포구",
+      "size": "대기업",
+      "employment": "전환형인턴",
+      "deadline": "2026-09-14",
+      "status": "신규",
+      "priority": "상",
+      "score": 3,
+      "fields": [
+        "데이터분석가"
+      ],
+      "link": "https://eycareers-kr.recruiter.co.kr/career/jobs/128101"
+    },
+    {
+      "id": "3d839273-b462-81cc-82af-fdc39df9e4d9",
+      "title": "공공부문 리서치 보조 연구원 모집 (계약직/인턴)",
+      "company": "㈜리서치랩",
+      "location": "기타",
+      "size": "확인필요",
+      "employment": "계약직",
+      "deadline": "2026-09-18",
+      "status": "신규",
+      "priority": "상",
+      "score": null,
+      "fields": [
+        "리서치애널리스트"
+      ],
+      "link": "https://m.jobkorea.co.kr/Recruit/GI_Read/49613203?sc=640"
+    },
     {
       "id": "3d739273-b462-8105-a78d-d46778fd61d5",
       "title": "Research Analyst (Intern)/RA — 백엔드 개발",
