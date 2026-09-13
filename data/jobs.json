@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-13T15:58:28.175Z",
+  "updatedAt": "2026-09-13T20:35:07.142Z",
   "jobs": [
     {
       "id": "3d839273-b462-8118-b155-fe1c3ccd3066",
@@ -41,7 +41,7 @@
       "size": "대기업",
       "employment": "전환형인턴",
       "deadline": "2026-09-14",
-      "status": "신규",
+      "status": "스킵",
       "priority": "상",
       "score": 3,
       "fields": [
@@ -57,7 +57,7 @@
       "size": "확인필요",
       "employment": "계약직",
       "deadline": "2026-09-18",
-      "status": "신규",
+      "status": "스킵",
       "priority": "상",
       "score": null,
       "fields": [
@@ -217,7 +217,7 @@
       "size": "대기업",
       "employment": "전환형인턴",
       "deadline": "2026-09-20",
-      "status": "신규",
+      "status": "스킵",
       "priority": null,
       "score": null,
       "fields": [
@@ -1023,7 +1023,7 @@
       "size": "대기업",
       "employment": "정규직",
       "deadline": "2026-09-14",
-      "status": "검토중",
+      "status": "지원함",
       "priority": null,
       "score": null,
       "fields": [
@@ -1285,7 +1285,7 @@
       "size": "중소기업",
       "employment": "정규직",
       "deadline": "2026-09-14",
-      "status": "검토중",
+      "status": "스킵",
       "priority": null,
       "score": null,
       "fields": [
