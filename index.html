@@ -228,7 +228,7 @@ const APP_SECRET = "nicevictory2028";
 const TODAY = new Date();
 let jobs = [], skills = [], events = [];
 const ALL_STATUSES = ["신규","검토중","지원함","스킵","마감"];
-const VISIBLE_STATUSES = ["검토중","지원함"];
+const VISIBLE_STATUSES = ["신규", "검토중","지원함"];
 const CATEGORIES = ["공고관련","스킬관련","개인일정"];
 const DEFAULT_COLORS = {"공고관련":"#1F3B57","스킬관련":"#3F6B52","개인일정":"#6B5B95"};
 let CAT_COLORS = JSON.parse(localStorage.getItem('cal_cat_colors') || 'null') || {...DEFAULT_COLORS};
