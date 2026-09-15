@@ -1,6 +1,22 @@
 {
-  "updatedAt": "2026-09-14T21:41:46.972Z",
+  "updatedAt": "2026-09-15T04:23:29.149Z",
   "jobs": [
+    {
+      "id": "3dc39273-b462-81a0-ba0f-c59b2ed6cb9a",
+      "title": "에코마케팅 2026 하반기 신입·경력 집중채용 — 데이터분석 직무",
+      "company": "에코마케팅",
+      "location": "기타",
+      "size": "중견기업",
+      "employment": "정규직",
+      "deadline": "2026-10-19",
+      "status": "신규",
+      "priority": null,
+      "score": 3,
+      "fields": [
+        "데이터분석가"
+      ],
+      "link": "https://www.catch.co.kr/NCS/RecruitInfoDetails/570568"
+    },
     {
       "id": "3db39273-b462-8134-b922-c89c437e2d4c",
       "title": "컨설팅부문 Digital 컨설팅 인턴 (Digital & Emerging Technologies)",
@@ -56,7 +72,7 @@
       "location": "기타",
       "size": "대기업",
       "employment": "계약직",
-      "deadline": "2026-09-14",
+      "deadline": "2026-09-18",
       "status": "신규",
       "priority": "상",
       "score": null,
@@ -89,7 +105,7 @@
       "size": "대기업",
       "employment": "계약직",
       "deadline": "2026-09-14",
-      "status": "신규",
+      "status": "마감",
       "priority": "상",
       "score": null,
       "fields": [
