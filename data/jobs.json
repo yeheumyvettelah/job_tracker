@@ -1,6 +1,379 @@
 {
-  "updatedAt": "2026-09-16T04:18:53.178Z",
+  "updatedAt": "2026-09-16T11:14:42.814Z",
   "jobs": [
+    {
+      "id": "3dd39273-b462-8148-bc1c-d77b401e4f53",
+      "title": "2026 하반기 CJ ENM 커머스부문 신입 — 데이터 엔지니어",
+      "company": "CJ ENM 커머스부문",
+      "location": "기타",
+      "size": "대기업",
+      "employment": "정규직",
+      "deadline": "2026-09-30",
+      "status": "스킵",
+      "priority": "하",
+      "score": 3,
+      "fields": [
+        "데이터분석가",
+        "데이터사이언티스트"
+      ],
+      "link": "https://recruit.cj.net/recruit/ko/recruit/recruit/detail.fo?zz_jo_num=8775"
+    },
+    {
+      "id": "3dd39273-b462-81a8-9d68-ed211cdac98c",
+      "title": "NAVER 신사업 전략 및 국내외 주요 산업 리서치 (체험형 인턴)",
+      "company": "NAVER",
+      "location": "기타",
+      "size": "대기업",
+      "employment": "계약직",
+      "deadline": "2026-09-21",
+      "status": "스킵",
+      "priority": "하",
+      "score": 3,
+      "fields": [
+        "리서치애널리스트",
+        "AI기획자"
+      ],
+      "link": "https://recruit.navercorp.com/rcrt/view.do?annoId=30005427&lang=ko"
+    },
+    {
+      "id": "3dd39273-b462-81c0-ad90-c628d3b78b9a",
+      "title": "2026 하반기 CJ ENM 엔터테인먼트부문 신입 — AI product/content builder",
+      "company": "CJ ENM 엔터테인먼트부문",
+      "location": "기타",
+      "size": "대기업",
+      "employment": "정규직",
+      "deadline": "2026-09-30",
+      "status": "스킵",
+      "priority": "하",
+      "score": 3,
+      "fields": [
+        "AI기획자"
+      ],
+      "link": "https://recruit.cj.net/recruit/ko/recruit/recruit/detail.fo?zz_jo_num=8778"
+    },
+    {
+      "id": "3dd39273-b462-81c2-af58-f29405b71669",
+      "title": "2026 하반기 CJ프레시웨이 신입 — 디지털 마케팅 / IT전략",
+      "company": "CJ프레시웨이",
+      "location": "기타",
+      "size": "대기업",
+      "employment": "정규직",
+      "deadline": "2026-09-30",
+      "status": "스킵",
+      "priority": "하",
+      "score": 2,
+      "fields": [
+        "AI기획자",
+        "기타"
+      ],
+      "link": "https://recruit.cj.net/recruit/ko/recruit/recruit/detail.fo?zz_jo_num=8774"
+    },
+    {
+      "id": "3dd39273-b462-81ce-98e6-e68141f5dba1",
+      "title": "2026 하반기 CJ올리브네트웍스 신입 — AI Engineer 등",
+      "company": "CJ올리브네트웍스",
+      "location": "기타",
+      "size": "대기업",
+      "employment": "정규직",
+      "deadline": "2026-09-30",
+      "status": "스킵",
+      "priority": "하",
+      "score": 3,
+      "fields": [
+        "AI기획자",
+        "데이터사이언티스트"
+      ],
+      "link": "https://recruit.cj.net/recruit/ko/recruit/recruit/detail.fo?zz_jo_num=8767"
+    },
+    {
+      "id": "3dd39273-b462-81cf-857a-f3422cfb6f60",
+      "title": "2026 하반기 CJ푸드빌 신입 — Staff(브랜드전략·경영관리·전략기획·업무혁신)",
+      "company": "CJ푸드빌",
+      "location": "기타",
+      "size": "대기업",
+      "employment": "정규직",
+      "deadline": "2026-09-30",
+      "status": "스킵",
+      "priority": "하",
+      "score": 2,
+      "fields": [
+        "기타"
+      ],
+      "link": "https://recruit.cj.net/recruit/ko/recruit/recruit/detail.fo?zz_jo_num=8771"
+    },
+    {
+      "id": "3dd39273-b462-81de-9a36-f91c791f3628",
+      "title": "2026 하반기 CJ제일제당 신입 — IT-DX전략기획 / IT-데이터사이언스 / 경영지원-전략기획",
+      "company": "CJ제일제당",
+      "location": "기타",
+      "size": "대기업",
+      "employment": "정규직",
+      "deadline": "2026-09-30T17:00:00.000+09:00",
+      "status": "검토중",
+      "priority": "상",
+      "score": 4,
+      "fields": [
+        "데이터분석가",
+        "AI기획자"
+      ],
+      "link": "https://recruit.cj.net/recruit/ko/recruit/recruit/detail.fo?zz_jo_num=8788"
+    },
+    {
+      "id": "3dd39273-b462-81fb-8fbc-cd18a333f356",
+      "title": "2026 하반기 CJ올리브영 신입",
+      "company": "CJ올리브영",
+      "location": "기타",
+      "size": "대기업",
+      "employment": "정규직",
+      "deadline": "2026-09-30",
+      "status": "스킵",
+      "priority": "하",
+      "score": 2,
+      "fields": [
+        "기타"
+      ],
+      "link": "https://recruit.cj.net/recruit/ko/recruit/recruit/detail.fo?zz_jo_num=8770"
+    },
+    {
+      "id": "3dd39273-b462-8166-9842-e9ac9cad754f",
+      "title": "Business Analyst",
+      "company": "맥킨지(McKinsey)",
+      "location": "기타",
+      "size": "대기업",
+      "employment": "정규직",
+      "deadline": null,
+      "status": "신규",
+      "priority": null,
+      "score": 4,
+      "fields": [
+        "비즈니스애널리스트"
+      ],
+      "link": "https://www.wanted.co.kr/wd/386724"
+    },
+    {
+      "id": "3dd39273-b462-816e-a43c-ecb63e43a833",
+      "title": "Global Business Solutions - Business Analyst (Graduate)",
+      "company": "틱톡(TikTok)",
+      "location": "기타",
+      "size": "대기업",
+      "employment": "정규직",
+      "deadline": null,
+      "status": "신규",
+      "priority": null,
+      "score": 4,
+      "fields": [
+        "비즈니스애널리스트"
+      ],
+      "link": "https://www.wanted.co.kr/wd/386413"
+    },
+    {
+      "id": "3dd39273-b462-8119-b57e-d9e903ac254f",
+      "title": "Sustainability team RA(Research Assistant) 모집",
+      "company": "삼일회계법인 (PwC 한국)",
+      "location": "기타",
+      "size": "대기업",
+      "employment": "계약직",
+      "deadline": "2026-09-27",
+      "status": "스킵",
+      "priority": null,
+      "score": null,
+      "fields": [
+        "리서치애널리스트"
+      ],
+      "link": "https://inthiswork.com/archives/397733"
+    },
+    {
+      "id": "3dd39273-b462-8143-b4d5-de192086de4a",
+      "title": "26년 하반기 신입사원 채용 (AI/DX전략)",
+      "company": "에이치디한국조선해양(주)",
+      "location": "기타",
+      "size": "대기업",
+      "employment": "정규직",
+      "deadline": "2026-09-27",
+      "status": "스킵",
+      "priority": null,
+      "score": 5,
+      "fields": [
+        "AI기획자"
+      ],
+      "link": "https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=54914022"
+    },
+    {
+      "id": "3dd39273-b462-8168-9104-d7fb42d7fff7",
+      "title": "EON Group RA 채용",
+      "company": "이언그룹(EON Group)",
+      "location": "기타",
+      "size": "확인필요",
+      "employment": "계약직",
+      "deadline": "2026-09-23",
+      "status": "스킵",
+      "priority": "상",
+      "score": null,
+      "fields": [
+        "리서치애널리스트"
+      ],
+      "link": "https://www.insightbay.co.kr/v2/positions/view/140/1"
+    },
+    {
+      "id": "3dd39273-b462-816a-ba6c-fa4ddc3bc05c",
+      "title": "[Kearney Korea] RA(인턴) 모집 공고 (데이터)",
+      "company": "에이티커니코리아(Kearney Korea)",
+      "location": "기타",
+      "size": "대기업",
+      "employment": "계약직",
+      "deadline": "2026-09-30",
+      "status": "스킵",
+      "priority": null,
+      "score": null,
+      "fields": [
+        "리서치애널리스트"
+      ],
+      "link": "https://www.insightbay.co.kr/v2/positions/view/135/1"
+    },
+    {
+      "id": "3dd39273-b462-8190-acc9-d1a2b985966a",
+      "title": "[GICG] 프로젝트 참여형 RA 모집",
+      "company": "글로벌아이앤컴퍼니그룹(주) (GICG)",
+      "location": "기타",
+      "size": "확인필요",
+      "employment": "계약직",
+      "deadline": "2026-09-20",
+      "status": "스킵",
+      "priority": "상",
+      "score": null,
+      "fields": [
+        "리서치애널리스트"
+      ],
+      "link": "https://www.insightbay.co.kr/v2/positions/view/146/1"
+    },
+    {
+      "id": "3dd39273-b462-8190-af81-d3c77516bdeb",
+      "title": "LLM Research Engineer (Pre-training) (신입/경력)",
+      "company": "(주)카카오",
+      "location": "기타",
+      "size": "대기업",
+      "employment": "정규직",
+      "deadline": "2026-09-30",
+      "status": "보류",
+      "priority": null,
+      "score": 1,
+      "fields": [
+        "데이터사이언티스트"
+      ],
+      "link": "https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=54241231"
+    },
+    {
+      "id": "3dd39273-b462-819b-a3b7-fe930b8dfc2c",
+      "title": "[Hebronstar] 전략컨설팅펌 GM부서 Research Assistant(인턴) 채용",
+      "company": "헤브론스타(주) (Hebronstar Strategy Consultants)",
+      "location": "기타",
+      "size": "중견기업",
+      "employment": "계약직",
+      "deadline": "2026-09-25",
+      "status": "스킵",
+      "priority": null,
+      "score": null,
+      "fields": [
+        "리서치애널리스트"
+      ],
+      "link": "https://www.insightbay.co.kr/v2/positions/view/143/1"
+    },
+    {
+      "id": "3dd39273-b462-81c9-9bf7-e4eefc9c708d",
+      "title": "[PwC컨설팅] RA 채용 공고 (AI Agent)",
+      "company": "PwC consulting",
+      "location": "기타",
+      "size": "대기업",
+      "employment": "계약직",
+      "deadline": "2026-09-25",
+      "status": "스킵",
+      "priority": null,
+      "score": null,
+      "fields": [
+        "리서치애널리스트"
+      ],
+      "link": "https://www.insightbay.co.kr/v2/positions/view/141/1"
+    },
+    {
+      "id": "3dd39273-b462-81cc-950c-eead47da2cf1",
+      "title": "PwC컨설팅 RA채용 공고 (국내 정유사 전사 AX)",
+      "company": "PwC컨설팅",
+      "location": "기타",
+      "size": "대기업",
+      "employment": "계약직",
+      "deadline": "2026-09-16",
+      "status": "스킵",
+      "priority": "상",
+      "score": null,
+      "fields": [
+        "리서치애널리스트"
+      ],
+      "link": "https://www.insightbay.co.kr/v2/positions/view/134/1"
+    },
+    {
+      "id": "3dd39273-b462-81d5-b04f-fb9f8f664c24",
+      "title": "[PwC컨설팅] 프로젝트 RA 모집 (2차전지 소재사 전사 PI)",
+      "company": "프라이스워터하우스쿠퍼스컨설팅",
+      "location": "기타",
+      "size": "대기업",
+      "employment": "계약직",
+      "deadline": "2026-09-18",
+      "status": "스킵",
+      "priority": "상",
+      "score": null,
+      "fields": [
+        "리서치애널리스트"
+      ],
+      "link": "https://www.insightbay.co.kr/v2/positions/view/139/1"
+    },
+    {
+      "id": "3dd39273-b462-81d6-aa00-ca95c743b8d1",
+      "title": "[Kearney Korea] RA(인턴) 모집 공고 (AI)",
+      "company": "에이티커니코리아(Kearney Korea)",
+      "location": "기타",
+      "size": "대기업",
+      "employment": "계약직",
+      "deadline": "2026-09-30",
+      "status": "스킵",
+      "priority": null,
+      "score": null,
+      "fields": [
+        "리서치애널리스트"
+      ],
+      "link": "https://www.insightbay.co.kr/v2/positions/view/136/1"
+    },
+    {
+      "id": "3dd39273-b462-81d7-b2d9-d0af29131b0c",
+      "title": "대규모 신입사원 채용 (R&D_SW/컴퓨터공학 AI)",
+      "company": "한화에어로스페이스(주)",
+      "location": "기타",
+      "size": "대기업",
+      "employment": "정규직",
+      "deadline": "2026-09-20",
+      "status": "보류",
+      "priority": null,
+      "score": 2,
+      "fields": [
+        "AI기획자"
+      ],
+      "link": "https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=54899624"
+    },
+    {
+      "id": "3dd39273-b462-81eb-997c-cd004f376a8b",
+      "title": "대기업 구축 프로젝트 RA 모집",
+      "company": "프라이스워터하우스쿠퍼스컨설팅",
+      "location": "기타",
+      "size": "대기업",
+      "employment": "계약직",
+      "deadline": "2026-09-20",
+      "status": "스킵",
+      "priority": "상",
+      "score": null,
+      "fields": [
+        "리서치애널리스트"
+      ],
+      "link": "https://www.insightbay.co.kr/v2/positions/view/145/1"
+    },
     {
       "id": "3dc39273-b462-81a0-ba0f-c59b2ed6cb9a",
       "title": "에코마케팅 2026 하반기 신입·경력 집중채용 — 데이터분석 직무",
@@ -89,7 +462,7 @@
       "size": "확인필요",
       "employment": "계약직",
       "deadline": "2026-09-21",
-      "status": "검토중",
+      "status": "스킵",
       "priority": "상",
       "score": 3,
       "fields": [
@@ -313,7 +686,7 @@
       "size": "중견기업",
       "employment": "계약직",
       "deadline": null,
-      "status": "신규",
+      "status": "마감",
       "priority": null,
       "score": 3,
       "fields": [
@@ -1461,7 +1834,7 @@
       "size": "중소기업",
       "employment": "계약직",
       "deadline": "2026-10-12",
-      "status": "신규",
+      "status": "스킵",
       "priority": null,
       "score": null,
       "fields": [
