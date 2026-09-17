@@ -1,6 +1,103 @@
 {
-  "updatedAt": "2026-09-17T04:25:05.531Z",
+  "updatedAt": "2026-09-17T11:23:12.194Z",
   "jobs": [
+    {
+      "id": "3de39273-b462-8192-894b-e5641aa24bab",
+      "title": "이노션 데이터 엔지니어 (Digital Analytics Engineer) (상시채용 인재풀)",
+      "company": "이노션",
+      "location": "기타",
+      "size": "대기업",
+      "employment": "계약직",
+      "deadline": null,
+      "status": "보류",
+      "priority": null,
+      "score": 1,
+      "fields": [
+        "데이터분석가"
+      ],
+      "link": "https://inthiswork.com/archives/398518"
+    },
+    {
+      "id": "3de39273-b462-8137-8a3f-d29d44ca3bf4",
+      "title": "2026년 각부문 신입 및 경력 채용",
+      "company": "(주)코난테크놀로지",
+      "location": "기타",
+      "size": "확인필요",
+      "employment": "정규직",
+      "deadline": "2026-10-08",
+      "status": "보류",
+      "priority": null,
+      "score": 2,
+      "fields": [
+        "데이터사이언티스트"
+      ],
+      "link": "https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=52783795"
+    },
+    {
+      "id": "3de39273-b462-8159-8da1-c2bbd41871c5",
+      "title": "한국투자증권 일반 공채(신입사원 5급)(리서치)",
+      "company": "한국투자증권(주)",
+      "location": "영등포구",
+      "size": "대기업",
+      "employment": "정규직",
+      "deadline": "2026-10-19",
+      "status": "신규",
+      "priority": null,
+      "score": 3,
+      "fields": [
+        "리서치애널리스트"
+      ],
+      "link": "https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=55053884"
+    },
+    {
+      "id": "3de39273-b462-8169-93e9-e64775feaa69",
+      "title": "Data Governance Manager",
+      "company": "토스뱅크(주)",
+      "location": "기타",
+      "size": "확인필요",
+      "employment": "정규직",
+      "deadline": "2026-09-30",
+      "status": "보류",
+      "priority": null,
+      "score": 2,
+      "fields": [
+        "데이터분석가"
+      ],
+      "link": "https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=54779041"
+    },
+    {
+      "id": "3de39273-b462-8183-940c-e368dc85c1ac",
+      "title": "2026 한화금융 신입공채 (AI/데이터)",
+      "company": "한화생명보험(주)",
+      "location": "영등포구",
+      "size": "대기업",
+      "employment": "정규직",
+      "deadline": "2026-09-18",
+      "status": "검토중",
+      "priority": "상",
+      "score": 5,
+      "fields": [
+        "AI기획자",
+        "데이터분석가"
+      ],
+      "link": "https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=54813066"
+    },
+    {
+      "id": "3de39273-b462-81c9-a866-cd9fb044dd95",
+      "title": "한국투자증권 일반 공채(신입사원 5급)(AI/디지털/정보보호)",
+      "company": "한국투자증권(주)",
+      "location": "영등포구",
+      "size": "대기업",
+      "employment": "정규직",
+      "deadline": "2026-10-19",
+      "status": "신규",
+      "priority": null,
+      "score": 3,
+      "fields": [
+        "AI기획자"
+      ],
+      "link": "https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=55053324"
+    },
     {
       "id": "3dd39273-b462-8148-bc1c-d77b401e4f53",
       "title": "2026 하반기 CJ ENM 커머스부문 신입 — 데이터 엔지니어",
