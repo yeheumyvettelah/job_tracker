@@ -1,6 +1,22 @@
 {
-  "updatedAt": "2026-09-20T04:25:09.445Z",
+  "updatedAt": "2026-09-20T11:02:51.788Z",
   "jobs": [
+    {
+      "id": "3e139273-b462-8121-8a1e-fdb8353b74d6",
+      "title": "다우데이타 | [신입] IT솔루션 영업 담당자 (채용전제형 인턴)",
+      "company": "다우데이타",
+      "location": "마포구",
+      "size": "대기업",
+      "employment": "전환형인턴",
+      "deadline": "2026-09-27",
+      "status": "보류",
+      "priority": "하",
+      "score": 1,
+      "fields": [
+        "기타"
+      ],
+      "link": "https://inthiswork.com/archives/398932"
+    },
     {
       "id": "3de39273-b462-8192-894b-e5641aa24bab",
       "title": "이노션 데이터 엔지니어 (Digital Analytics Engineer) (상시채용 인재풀)",
@@ -73,7 +89,7 @@
       "size": "대기업",
       "employment": "정규직",
       "deadline": "2026-09-18",
-      "status": "검토중",
+      "status": "지원함",
       "priority": "상",
       "score": 5,
       "fields": [
@@ -993,7 +1009,7 @@
       "size": "스타트업",
       "employment": "계약직",
       "deadline": "2026-09-30",
-      "status": "검토중",
+      "status": "스킵",
       "priority": null,
       "score": null,
       "fields": [
