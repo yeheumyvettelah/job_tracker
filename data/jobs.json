@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-19T20:22:35.963Z",
+  "updatedAt": "2026-09-20T04:25:09.445Z",
   "jobs": [
     {
       "id": "3de39273-b462-8192-894b-e5641aa24bab",
@@ -1541,7 +1541,7 @@
       "size": "대기업",
       "employment": "정규직",
       "deadline": "2026-09-22",
-      "status": "검토중",
+      "status": "스킵",
       "priority": "하",
       "score": 25,
       "fields": [
