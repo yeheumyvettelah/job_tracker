@@ -1,6 +1,54 @@
 {
-  "updatedAt": "2026-09-20T20:36:05.903Z",
+  "updatedAt": "2026-09-21T04:23:04.336Z",
   "jobs": [
+    {
+      "id": "3e239273-b462-8121-9845-d839d9d70d92",
+      "title": "2026 하반기 현대그룹 신입 매니저 채용(IT-데이터/AI개발)",
+      "company": "현대엘리베이터(주)",
+      "location": "기타",
+      "size": "대기업",
+      "employment": "정규직",
+      "deadline": "2026-09-22",
+      "status": "보류",
+      "priority": null,
+      "score": 1,
+      "fields": [
+        "데이터사이언티스트"
+      ],
+      "link": "https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=54926204"
+    },
+    {
+      "id": "3e239273-b462-8172-8f37-e8ea804b263b",
+      "title": "다올투자증권 리서치 채용전제형 인턴(퀀트분석RA) 모집",
+      "company": "다올투자증권(주)",
+      "location": "영등포구",
+      "size": "대기업",
+      "employment": "전환형인턴",
+      "deadline": "2026-09-27",
+      "status": "신규",
+      "priority": "상",
+      "score": 3,
+      "fields": [
+        "리서치애널리스트"
+      ],
+      "link": "https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=55050592"
+    },
+    {
+      "id": "3e239273-b462-81ce-a8ed-f41141594c8f",
+      "title": "다올투자증권 리서치 채용전제형 인턴(테크RA) 모집",
+      "company": "다올투자증권(주)",
+      "location": "영등포구",
+      "size": "대기업",
+      "employment": "전환형인턴",
+      "deadline": "2026-09-29",
+      "status": "신규",
+      "priority": null,
+      "score": 3,
+      "fields": [
+        "리서치애널리스트"
+      ],
+      "link": "https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=55087047"
+    },
     {
       "id": "3e139273-b462-8121-8a1e-fdb8353b74d6",
       "title": "다우데이타 | [신입] IT솔루션 영업 담당자 (채용전제형 인턴)",
@@ -895,7 +943,7 @@
       "size": "대기업",
       "employment": "정규직",
       "deadline": "2026-09-20T23:59:00.000+09:00",
-      "status": "신규",
+      "status": "마감",
       "priority": null,
       "score": 3,
       "fields": [
