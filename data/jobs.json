@@ -1,6 +1,38 @@
 {
-  "updatedAt": "2026-09-21T21:52:25.600Z",
+  "updatedAt": "2026-09-22T04:18:41.746Z",
   "jobs": [
+    {
+      "id": "3e339273-b462-810b-97d6-ca452555b88f",
+      "title": "[데이터유니버스] 2026년 신입/경력직 공개채용",
+      "company": "(주)데이터유니버스",
+      "location": "영등포구",
+      "size": "중소기업",
+      "employment": "정규직",
+      "deadline": "2026-10-18",
+      "status": "보류",
+      "priority": null,
+      "score": 2,
+      "fields": [
+        "기타"
+      ],
+      "link": "https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=55042336"
+    },
+    {
+      "id": "3e339273-b462-8140-aaea-c20c900f3d93",
+      "title": "2026년 하반기 신입사원 채용(AX-로보틱스 개발)",
+      "company": "한화오션(주)",
+      "location": "기타",
+      "size": "대기업",
+      "employment": "정규직",
+      "deadline": "2026-09-30",
+      "status": "보류",
+      "priority": null,
+      "score": 1,
+      "fields": [
+        "기타"
+      ],
+      "link": "https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=54910301"
+    },
     {
       "id": "3e239273-b462-8121-9845-d839d9d70d92",
       "title": "2026 하반기 현대그룹 신입 매니저 채용(IT-데이터/AI개발)",
