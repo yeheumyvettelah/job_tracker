@@ -1,6 +1,39 @@
 {
-  "updatedAt": "2026-09-23T11:13:00.202Z",
+  "updatedAt": "2026-09-23T16:34:45.234Z",
   "jobs": [
+    {
+      "id": "3e439273-b462-8185-b04d-f55e5b7bc07f",
+      "title": "2026년 동서식품 대졸 신입/경력사원 채용 — 전산 (AI 및 데이터 분석 인프라 구축과 운영)",
+      "company": "동서식품",
+      "location": "기타",
+      "size": "중견기업",
+      "employment": "정규직",
+      "deadline": "2026-10-12T18:00:00.000+09:00",
+      "status": "신규",
+      "priority": null,
+      "score": 3,
+      "fields": [
+        "데이터사이언티스트",
+        "기타"
+      ],
+      "link": "https://inthiswork.com/archives/399923"
+    },
+    {
+      "id": "3e439273-b462-81e0-a12d-eea3b06a6e9c",
+      "title": "LG유플러스 2026년 하반기 신입채용 — AIDC 사업기획",
+      "company": "LG유플러스",
+      "location": "기타",
+      "size": "대기업",
+      "employment": "정규직",
+      "deadline": "2026-09-27T23:00:00.000+09:00",
+      "status": "신규",
+      "priority": null,
+      "score": 3,
+      "fields": [
+        "AI기획자"
+      ],
+      "link": "https://inthiswork.com/archives/397214"
+    },
     {
       "id": "3e439273-b462-8147-98a7-f5cd02f0dc47",
       "title": "LLM/RAG 기반 상담지원 서비스 기획 및 고도화 업무 담당자 채용",
