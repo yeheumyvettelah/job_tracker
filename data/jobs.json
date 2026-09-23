@@ -1,6 +1,102 @@
 {
-  "updatedAt": "2026-09-23T04:15:58.401Z",
+  "updatedAt": "2026-09-23T11:13:00.202Z",
   "jobs": [
+    {
+      "id": "3e439273-b462-8147-98a7-f5cd02f0dc47",
+      "title": "LLM/RAG 기반 상담지원 서비스 기획 및 고도화 업무 담당자 채용",
+      "company": "㈜하이텔레서비스",
+      "location": "강서구",
+      "size": "대기업",
+      "employment": "정규직",
+      "deadline": "2026-10-05",
+      "status": "신규",
+      "priority": null,
+      "score": 4,
+      "fields": [
+        "AI기획자"
+      ],
+      "link": "https://www.jobkorea.co.kr/Recruit/GI_Read/50043433"
+    },
+    {
+      "id": "3e439273-b462-81a5-9236-d09148c2ce25",
+      "title": "[효성ITX] 사업전략 및 Pre Sales (신입/경력)",
+      "company": "효성ITX㌧",
+      "location": null,
+      "size": "대기업",
+      "employment": "정규직",
+      "deadline": "2026-10-12",
+      "status": "보류",
+      "priority": null,
+      "score": 2,
+      "fields": [
+        "AI기획자"
+      ],
+      "link": "https://www.jobkorea.co.kr/Recruit/GI_Read/49774611"
+    },
+    {
+      "id": "3e439273-b462-81bd-a3bc-e53ec6279ac1",
+      "title": "[메드파크] AI Business System / DX 담당 채용",
+      "company": "(주)메드파크",
+      "location": "영등포구",
+      "size": "확인필요",
+      "employment": "정규직",
+      "deadline": "2026-09-26",
+      "status": "신규",
+      "priority": "상",
+      "score": 3,
+      "fields": [
+        "AI기획자"
+      ],
+      "link": "https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=54866867"
+    },
+    {
+      "id": "3e439273-b462-81a5-b83c-f97b481efc20",
+      "title": "[메타엠]AICC 전략본부 Data Scientist 채용",
+      "company": "(주)메타엠",
+      "location": null,
+      "size": "중견기업",
+      "employment": "정규직",
+      "deadline": "2026-10-09",
+      "status": "보류",
+      "priority": null,
+      "score": 1,
+      "fields": [
+        "데이터사이언티스트"
+      ],
+      "link": "https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=55086185"
+    },
+    {
+      "id": "3e439273-b462-81ba-944e-fae30961279c",
+      "title": "이큐브랩(Haulla) Business Analyst Intern (경력무관)",
+      "company": "(주)이큐브랩",
+      "location": "구로구",
+      "size": "스타트업",
+      "employment": "계약직",
+      "deadline": "2026-09-30",
+      "status": "보류",
+      "priority": null,
+      "score": 2,
+      "fields": [
+        "비즈니스애널리스트"
+      ],
+      "link": "https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=55054402"
+    },
+    {
+      "id": "3e439273-b462-8147-af3c-c606197769e4",
+      "title": "㈜위즈코리아 '26년 하반기 AI Agent기반 업무혁신 담당자 채용",
+      "company": "㈜위즈코리아",
+      "location": "강서구",
+      "size": "중견기업",
+      "employment": "정규직",
+      "deadline": "2026-10-31",
+      "status": "신규",
+      "priority": null,
+      "score": 5,
+      "fields": [
+        "AI기획자"
+      ],
+      "link": "https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=54898946"
+    },
     {
       "id": "3e339273-b462-810b-97d6-ca452555b88f",
       "title": "[데이터유니버스] 2026년 신입/경력직 공개채용",
