@@ -1,6 +1,22 @@
 {
-  "updatedAt": "2026-09-23T16:34:45.234Z",
+  "updatedAt": "2026-09-23T21:21:00.321Z",
   "jobs": [
+    {
+      "id": "3e439273-b462-812b-956c-db2e9a2f7575",
+      "title": "2027년 대한항공 신입사원 모집 — 일반직",
+      "company": "대한항공",
+      "location": "강서구",
+      "size": "대기업",
+      "employment": "정규직",
+      "deadline": "2026-09-28T16:00:00.000+09:00",
+      "status": "검토중",
+      "priority": null,
+      "score": null,
+      "fields": [
+        "기타"
+      ],
+      "link": "https://koreanair.recruiter.co.kr/career/home"
+    },
     {
       "id": "3e439273-b462-8185-b04d-f55e5b7bc07f",
       "title": "2026년 동서식품 대졸 신입/경력사원 채용 — 전산 (AI 및 데이터 분석 인프라 구축과 운영)",
@@ -9,7 +25,7 @@
       "size": "중견기업",
       "employment": "정규직",
       "deadline": "2026-10-12T18:00:00.000+09:00",
-      "status": "신규",
+      "status": "검토중",
       "priority": null,
       "score": 3,
       "fields": [
@@ -26,29 +42,13 @@
       "size": "대기업",
       "employment": "정규직",
       "deadline": "2026-09-27T23:00:00.000+09:00",
-      "status": "신규",
+      "status": "검토중",
       "priority": null,
       "score": 3,
       "fields": [
         "AI기획자"
       ],
       "link": "https://inthiswork.com/archives/397214"
-    },
-    {
-      "id": "3e439273-b462-8147-98a7-f5cd02f0dc47",
-      "title": "LLM/RAG 기반 상담지원 서비스 기획 및 고도화 업무 담당자 채용",
-      "company": "㈜하이텔레서비스",
-      "location": "강서구",
-      "size": "대기업",
-      "employment": "정규직",
-      "deadline": "2026-10-05",
-      "status": "신규",
-      "priority": null,
-      "score": 4,
-      "fields": [
-        "AI기획자"
-      ],
-      "link": "https://www.jobkorea.co.kr/Recruit/GI_Read/50043433"
     },
     {
       "id": "3e439273-b462-81a5-9236-d09148c2ce25",
@@ -848,7 +848,7 @@
       "size": "대기업",
       "employment": "정규직",
       "deadline": "2026-09-30",
-      "status": "검토중",
+      "status": "스킵",
       "priority": null,
       "score": 5,
       "fields": [
@@ -1056,7 +1056,7 @@
       "size": "대기업",
       "employment": "정규직",
       "deadline": "2026-09-30",
-      "status": "검토중",
+      "status": "스킵",
       "priority": null,
       "score": 5,
       "fields": [
