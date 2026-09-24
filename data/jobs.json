@@ -1,6 +1,70 @@
 {
-  "updatedAt": "2026-09-24T04:11:33.739Z",
+  "updatedAt": "2026-09-24T11:28:28.689Z",
   "jobs": [
+    {
+      "id": "3e539273-b462-8119-a7be-e865dd6608c4",
+      "title": "[kt alpha] 케이티알파 쇼핑 Data Analyst 및 Data Engineer 채용",
+      "company": "(주)케이티알파",
+      "location": "양천구",
+      "size": "대기업",
+      "employment": "정규직",
+      "deadline": "2026-10-05",
+      "status": "보류",
+      "priority": null,
+      "score": 2,
+      "fields": [
+        "데이터분석가"
+      ],
+      "link": "https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=54965448"
+    },
+    {
+      "id": "3e539273-b462-8125-b6a9-f710df447a29",
+      "title": "토스인컴 Data Analytics Engineer",
+      "company": "토스인컴(주)",
+      "location": "기타",
+      "size": "중견기업",
+      "employment": "정규직",
+      "deadline": "2026-09-30",
+      "status": "보류",
+      "priority": null,
+      "score": 2,
+      "fields": [
+        "데이터분석가"
+      ],
+      "link": "https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=54170497"
+    },
+    {
+      "id": "3e539273-b462-812e-843d-c243ef94381f",
+      "title": "대한항공 2027년 전문인력(신입/경력) 모집 (Data)",
+      "company": "(주)대한항공",
+      "location": "강서구",
+      "size": "대기업",
+      "employment": "정규직",
+      "deadline": "2026-09-28",
+      "status": "보류",
+      "priority": null,
+      "score": 2,
+      "fields": [
+        "데이터분석가"
+      ],
+      "link": "https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=55050466"
+    },
+    {
+      "id": "3e539273-b462-815d-a1f7-dd2e13940a21",
+      "title": "한화오션 2026년 하반기 신입사원 채용(AX_AI 개발)",
+      "company": "한화오션(주)",
+      "location": "기타",
+      "size": "대기업",
+      "employment": "정규직",
+      "deadline": "2026-09-30",
+      "status": "보류",
+      "priority": null,
+      "score": 1,
+      "fields": [
+        "AI기획자"
+      ],
+      "link": "https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=54910219"
+    },
     {
       "id": "3e439273-b462-812b-956c-db2e9a2f7575",
       "title": "2027년 대한항공 신입사원 모집 — 일반직",
